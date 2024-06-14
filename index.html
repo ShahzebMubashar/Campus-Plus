@@ -4,36 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Modern Styled Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to My Basic Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="welcome-section">
-            <h2>Welcome!</h2>
-            <p>This is a basic website example using HTML, CSS, and JavaScript.</p>
-            <button id="clickMeButton">Click Me!</button>
-            <p id="clickMessage" style="display: none;">You clicked the button!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Basic Website</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li>
+                <a href="#">Past Paper</a>
+                <div class="dropdown">
+                    <a href="#">Math</a>
+                    <a href="#">Science</a>
+                    <a href="#">History</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="text">
+            <h1>Welcome to Our Website</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. Nulla facilisi.
+                Donec pharetra interdum elit, nec ultrices arcu cursus non. Pellentesque ut orci quis odio tempor
+                elementum. Sed vehicula nisi ut est pulvinar, et vestibulum urna suscipit.</p>
+        </div>
+        <div class="image">
+            <img src="https://via.placeholder.com/600x400" alt="Placeholder Image">
+        </div>
+    </div>
 </body>
 
 </html>
