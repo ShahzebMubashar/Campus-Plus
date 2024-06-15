@@ -95,10 +95,6 @@ a {
 
 }
 
-.nav__logo img {
-    size: 10px;
-}
-
 .nav__logo:hover {
     color: var(--first-color);
 }
