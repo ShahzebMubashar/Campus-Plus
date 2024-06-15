@@ -92,10 +92,11 @@ a {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     transition: color 0.3s;
+
 }
 
-.nav__logo i {
-    font-size: 1.25rem;
+.nav__logo img {
+    size: 10px;
 }
 
 .nav__logo:hover {
