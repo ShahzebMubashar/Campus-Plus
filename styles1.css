@@ -753,8 +753,12 @@ a {
 
 .product-section {
     background-color: #f0f8ff;
-    /* light blue background */
     padding: 50px 20px;
+}
+
+.product-section .container h3,
+.product-section .container h2 {
+    color: #000;
 }
 
 .product-wrapper {
@@ -779,6 +783,7 @@ a {
 .product-item h3 {
     margin-top: 20px;
     font-size: 1.5rem;
+    color: #000;
 }
 
 .product-item p {
