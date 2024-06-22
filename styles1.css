@@ -461,6 +461,12 @@ a {
 }
 
 .content {
+    width: 100%;
+    background-color: #f0f8ff;
+    height: 50%;
+}
+
+.content-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -754,6 +760,7 @@ a {
 .product-section {
     background-color: #f0f8ff;
     padding: 40px 20px;
+    width: 100%;
 }
 
 .product-section .container h2 {
@@ -766,17 +773,23 @@ a {
     margin: -2px
 }
 
+.product-section .container p {
+    margin: 20px -2px -2px -2px;
+}
+
 .product-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 50px;
+    width: 80%;
 }
 
 .product-item {
+    width: 100%;
     flex: 1;
     text-align: center;
     padding: 20px;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 .product-item img {
