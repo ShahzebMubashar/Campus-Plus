@@ -464,6 +464,7 @@ a {
     width: 100%;
     background-color: #f0f8ff;
     height: 550px;
+    margin-top: -3%;
 }
 
 .content-container {
@@ -471,7 +472,7 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-left: 12%;
-    margin-top: 8%;
+    margin-top: 10%;
     max-width: 95%;
 }
 
