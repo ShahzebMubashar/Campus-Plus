@@ -623,3 +623,201 @@ a {
     left: 0;
     color: #007bff;
 }
+
+
+.container h2 {
+    display: inline-block;
+    margin: 40px 450px 100px 0;
+    border-radius: 5px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.container h2 span {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+}
+
+
+.features {
+    padding: 50px 0 10px;
+    /* Adjust padding */
+    text-align: right;
+    background-color: #000;
+    /* Black background color */
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    /* Center align the features */
+    width: 100%;
+    /* Reduced width */
+}
+
+.feature {
+    text-align: left;
+    margin-bottom: 40px;
+    flex: 0 1 100%;
+    /* Adjust width for 3 features */
+    margin: -20px 20px;
+    /* Adjusted margin */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.8);
+    /* Shadow effect */
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+#feature1img,
+#feature2img,
+#feature3img {
+    text-align: center;
+    width: auto;
+    height: auto;
+    width: 80%;
+    margin: 5% 8%;
+    /* Adjusted margin */
+}
+
+.feature-content {
+    padding: 20px 50px;
+    background-color: #fff;
+    background-position: -10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.feature-content h3 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.feature-content p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 15px;
+    /* Adjust margin */
+    margin-bottom: 3%;
+}
+
+.btn.more {
+    background-color: #007bff;
+    /* Blue color for sign up button */
+    margin-top: 10%;
+    margin-left: 28%;
+    padding: 2% 5%;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn.more:hover,
+.button_ft:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.button_ft {
+    background-color: transparent;
+    /* Blue color for sign up button */
+    border: 2px solid white;
+    margin: 6% 46% 5% 0;
+    padding: 1% 2%;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.button_ft i {
+    position: absolute;
+    margin-top: -0.3%;
+}
+
+.youtube-section {
+    display: flex;
+    margin: 0 auto;
+    max-width: 90%;
+    /* 90% of the page */
+    height: 500px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+    /* Shadow effect */
+}
+
+.youtube-info {
+    flex: 1;
+    padding-right: 20px;
+    margin-top: 8%;
+}
+
+.youtube-info h2 {
+
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.youtube-info p {
+    text-align: justify;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 95%;
+    padding-left: 10%;
+}
+
+.youtube-video {
+    border-radius: 20px;
+    flex: 1;
+    padding-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust for smaller screens */
+    .youtube-section {
+        flex-direction: column;
+    }
+
+    .youtube-info,
+    .youtube-video {
+        padding: 20px 0;
+    }
+}
