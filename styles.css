@@ -600,4 +600,26 @@ a {
     font-size: 1.1em;
     line-height: 1.6;
     color: #333333;
+    padding: 0 20px 0 20px;
+}
+
+.why-cplus-text ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.why-cplus-text ul li {
+    font-size: 1.1em;
+    color: #333333;
+    margin-left: 20px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.why-cplus-text ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #007bff;
 }
