@@ -654,9 +654,7 @@ a {
 .features-container {
     display: flex;
     justify-content: center;
-    /* Center align the features */
     width: 100%;
-    /* Reduced width */
 }
 
 .feature {
