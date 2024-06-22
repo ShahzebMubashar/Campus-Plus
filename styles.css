@@ -543,9 +543,7 @@ a {
 /* Image container styling */
 .why-cplus-img {
     flex: 0 0 25%;
-    /* Width of image container */
     max-width: 25%;
-    /* Max width to ensure it doesn't exceed this */
     position: relative;
     overflow: hidden;
     border-radius: 10px;
