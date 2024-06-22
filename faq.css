@@ -1,0 +1,47 @@
+/* CSS */
+.faq {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.faq-item {
+    flex: 1;
+    margin: 20px;
+}
+
+.faq-item h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-item {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .faq-item h2 {
+        font-size: 2rem;
+    }
+}
