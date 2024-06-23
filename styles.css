@@ -1075,6 +1075,7 @@ a {
     padding-top: 30px;
     width: 80%;
     margin-left: 8%;
+    display: flex;
 }
 
 .ct-footer-meta .ct-socials {
