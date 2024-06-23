@@ -1071,24 +1071,15 @@ a {
     }
 }
 
-.ct-footer-meta {
-    padding-top: 30px;
+.ct-footer-meta .row {
     width: 80%;
     margin-left: 8%;
+    margin-top: 2%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cit .ct-footer-meta .ct-socials {
-    padding: 20px 0;
-}
-
-.ct-footer-meta .ct-socials li {
-    padding: 0 3px
-}
-
-.ct-footer--with-button {
-    padding-top: 150px
-}
 
 address {
     color: #fff;
@@ -1107,9 +1098,31 @@ address a:hover {
     text-decoration: underline
 }
 
-@media (max-width:767px) {
-    address {
-        padding-top: 30px
+.ct-footer-meta .col-sm-6 {
+    flex-basis: calc(50% - 20px);
+    /* Adjust the width for smaller screens */
+    max-width: calc(50% - 20px);
+    margin-bottom: 20px;
+    /* Adds space between rows */
+}
+
+.ct-footer-meta .ct-socials {
+    display: flex;
+    /* Ensures social icons are also displayed in a row */
+    justify-content: center;
+    /* Centers social icons horizontally */
+}
+
+.ct-footer-meta .ct-socials li {
+    margin: 0 5px;
+    /* Adds space between social icons */
+}
+
+@media (max-width: 767px) {
+    .ct-footer-meta .col-sm-6 {
+        flex-basis: 100%;
+        /* Full width on smaller screens */
+        max-width: 100%;
     }
 }
 
