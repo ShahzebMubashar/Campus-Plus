@@ -1080,7 +1080,6 @@ a {
     align-items: center;
 }
 
-
 address {
     color: #fff;
     display: inline-block;
@@ -1100,17 +1099,13 @@ address a:hover {
 
 .ct-footer-meta .col-sm-6 {
     flex-basis: calc(50% - 20px);
-    /* Adjust the width for smaller screens */
     max-width: calc(50% - 20px);
     margin-bottom: 20px;
-    /* Adds space between rows */
 }
 
 .ct-footer-meta .ct-socials {
     display: flex;
-    /* Ensures social icons are also displayed in a row */
     justify-content: center;
-    /* Centers social icons horizontally */
 }
 
 .ct-footer-meta .ct-socials li {
