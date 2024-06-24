@@ -620,12 +620,26 @@ a {
     padding: 2% 2.8%;
     border-radius: 20px;
     text-decoration: none;
-}
-
-.whycplus-button:hover {
-    background-color: #333;
+    font-weight: bold;
     cursor: pointer;
 }
+
+
+.whycplus-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.whycplus-button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+.whycplus-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
 
 .container h2 {
     display: inline-block;
