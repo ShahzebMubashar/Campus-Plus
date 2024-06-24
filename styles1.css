@@ -612,6 +612,20 @@ a {
     border-top: 1px solid #ccc;
 }
 
+.whycplus-button {
+    width: 18%;
+    color: #fff;
+    background-color: #007bff;
+    margin-top: 3%;
+    padding: 2% 2.8%;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.whycplus-button:hover {
+    background-color: #333;
+    cursor: pointer;
+}
 
 .container h2 {
     display: inline-block;
