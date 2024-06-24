@@ -49,20 +49,6 @@ body {
     margin-top: 20px;
 }
 
-.course-price {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-}
-
-.course-price input {
-    margin-left: 10px;
-    padding: 2px 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: right;
-}
-
 .text-section {
     padding: 0px;
     max-width: 40%;
