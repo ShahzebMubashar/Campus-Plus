@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -783,8 +784,8 @@ a {
     font-size: 20px;
     color: #000;
     text-align: left;
-    margin-top: 25%;
-    font-family: Helvetica, sans-serif;
+    margin-top: 22%;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     padding-left: 15%;
 
@@ -813,6 +814,23 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 15%;
 }
+
+.youtube-info a {
+    margin-left: 15%;
+    padding-top: 150px;
+    color: rgb(0, 0, 205);
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-underline-offset: 4px;
+}
+
+.youtube-info a:hover {
+    color: darkblue;
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 4px;
+}
+
 
 .youtube-video {
     flex: 1;
