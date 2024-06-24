@@ -592,6 +592,7 @@ a {
 .text-section h1 {
     font-size: 50px;
     color: #333;
+    padding-bottom: 1.5%;
 }
 
 .text-section p {
@@ -603,6 +604,7 @@ a {
     font-size: 24px;
     color: #333;
     margin-top: 20px;
+    padding-bottom: 1%;
 }
 
 .text-section hr {
