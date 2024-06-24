@@ -27,3 +27,7 @@ function showSlides(n) {
     slides[nextIndex].style.display = "block";
     slides[nextIndex].classList.add("next-slide");
 }
+
+setInterval(() => {
+    changeSlide(1);
+}, 3000);
