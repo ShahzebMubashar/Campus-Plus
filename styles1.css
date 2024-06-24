@@ -786,7 +786,7 @@ a {
     margin-top: 25%;
     font-family: Helvetica, sans-serif;
     font-weight: 500;
-    padding-left: 10%;
+    padding-left: 15%;
 
 }
 
@@ -798,12 +798,12 @@ a {
     margin-top: 2%;
     font-family: cursive;
     font-weight: 200;
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
 
 .youtube-info p {
-    width: 95%;
+    width: 110%;
     font-size: 20px;
     color: #000;
     line-height: 1.5;
@@ -811,7 +811,7 @@ a {
     margin-top: 3%;
     padding-right: 20%;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
 .youtube-video {
@@ -850,7 +850,7 @@ a {
 
 
 .faq-total {
-    margin-top: 5%;
+    margin-top: 3.5%;
     padding: 0px;
     max-width: 100%;
     width: 100%;
