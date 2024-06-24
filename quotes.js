@@ -18,24 +18,12 @@ function showSlides(n) {
     slides[slideIndex].style.display = "block";
     slides[slideIndex].classList.add("active");
 
-    if (slides[slideIndex - 1]) {
-        slides[slideIndex - 1].style.display = "block";
-        slides[slideIndex - 1].classList.add("prev-slide");
-    } else {
-        slides[slides.length - 1].style.display = "block";
-        slides[slides.length - 1].classList.add("prev-slide");
-    }
+    let prevIndex = slideIndex - 1 >= 0 ? slideIndex - 1 : slides.length - 1;
+    let nextIndex = slideIndex + 1 < slides.length ? slideIndex + 1 : 0;
 
-    if (slides[slideIndex + 1]) {
-        slides[slideIndex + 1].style.display = "block";
-        slides[slideIndex + 1].classList.add("next-slide");
-    } else {
-        slides[0].style.display = "block";
-        slides[0].classList.add("next-slide");
-    }
+    slides[prevIndex].style.display = "block";
+    slides[prevIndex].classList.add("prev-slide");
+
+    slides[nextIndex].style.display = "block";
+    slides[nextIndex].classList.add("next-slide");
 }
-
-// Auto change slides every 5 seconds
-setInterval(() => {
-    changeSlide(1);
-}, 5000);
