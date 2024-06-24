@@ -64,12 +64,15 @@ body {
 }
 
 .text-section {
-    padding: 40px;
-    max-width: 600px;
+    padding: 0px;
+    max-width: 40%;
+    margin-top: 7%;
+    margin-right: 4%;
+
 }
 
 .text-section h1 {
-    font-size: 32px;
+    font-size: 50px;
     color: #333;
 }
 
