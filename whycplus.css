@@ -12,7 +12,7 @@ body {
 
 .container {
     display: flex;
-    max-width: 1200px;
+    max-width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -25,12 +25,12 @@ body {
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .phone-frame {
     position: relative;
-    width: 80%;
+    width: 75%;
     /* border: 1px solid #ccc; */
     border-radius: 16px;
     padding: 100px;
@@ -44,18 +44,6 @@ body {
     border-radius: 8px;
 }
 
-.buy-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #ff4500;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-}
 
 .access-mode {
     margin-top: 20px;
