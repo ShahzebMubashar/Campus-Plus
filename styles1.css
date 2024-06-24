@@ -561,6 +561,7 @@ a {
     align-items: center;
     padding: 20px;
     background-color: #fff;
+    border: 2px solid black;
 }
 
 .phone-frame {
