@@ -786,17 +786,19 @@ a {
     margin-top: 25%;
     font-family: Helvetica, sans-serif;
     font-weight: 500;
-    margin-left: 20%;
+    padding-left: 10%;
+
 }
 
 .youtube-info h2 {
     font-size: 40px;
     color: #000;
     text-align: left;
-    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 2%;
     font-family: cursive;
     font-weight: 200;
+    padding-left: 10%;
 }
 
 
@@ -807,8 +809,9 @@ a {
     line-height: 1.5;
     text-align: left;
     margin-top: 3%;
-    padding-left: 20%;
+    padding-right: 20%;
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10%;
 }
 
 .youtube-video {
@@ -822,12 +825,12 @@ a {
 }
 
 .youtube-video iframe {
-    width: 84%;
-    max-width: 84%;
-    height: 70%;
+    width: 94%;
+    max-width: 94%;
+    height: 75%;
     border: none;
-    border-radius: 20px;
-    margin-right: 5%;
+    border-radius: 10px;
+    margin-left: 5%;
     margin-top: 5%;
 }
 
