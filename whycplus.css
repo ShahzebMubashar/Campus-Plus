@@ -30,7 +30,7 @@ body {
 
 .phone-frame {
     position: relative;
-    width: 75%;
+    width: 80%;
     /* border: 1px solid #ccc; */
     border-radius: 16px;
     padding: 100px;
@@ -38,12 +38,11 @@ body {
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-
 .main-image {
     width: 100%;
     border-radius: 8px;
+    margin-right: -5%;
 }
-
 
 .access-mode {
     margin-top: 20px;
@@ -52,8 +51,8 @@ body {
 .text-section {
     padding: 0px;
     max-width: 40%;
-    margin-top: 7%;
-    margin-right: 4%;
+    margin-top: 8%;
+    margin-right: 6%;
 
 }
 
