@@ -91,3 +91,23 @@ body {
 .slideshow-controls .next:hover {
     background-color: #0b4a6b;
 }
+
+.slide-indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slide-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slide-indicator.active {
+    background-color: #555;
+}
