@@ -7,16 +7,23 @@ function changeSlide(n) {
 
 function showSlides(n) {
     let slides = document.getElementsByClassName("testimonial-slide");
-    if (n >= slides.length) { slideIndex = 0 }
-    if (n < 0) { slideIndex = slides.length - 1 }
+    let indicators = document.getElementsByClassName("slide-indicator");
+
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
 
     for (let i = 0; i < slides.length; i++) {
         slides[i].classList.remove("active", "prev-slide", "next-slide");
         slides[i].style.display = "none";
     }
 
+    for (let i = 0; i < indicators.length; i++) {
+        indicators[i].classList.remove("active");
+    }
+
     slides[slideIndex].style.display = "block";
     slides[slideIndex].classList.add("active");
+    indicators[slideIndex].classList.add("active");
 
     let prevIndex = slideIndex - 1 >= 0 ? slideIndex - 1 : slides.length - 1;
     let nextIndex = slideIndex + 1 < slides.length ? slideIndex + 1 : 0;
@@ -28,6 +35,20 @@ function showSlides(n) {
     slides[nextIndex].classList.add("next-slide");
 }
 
-setInterval(() => {
-    changeSlide(1);
-}, 3000);
+document.addEventListener('DOMContentLoaded', function () {
+    let prevButton = document.querySelector('.prev-slide');
+    let nextButton = document.querySelector('.next-slide');
+
+    prevButton.addEventListener('click', () => changeSlide(-1));
+    nextButton.addEventListener('click', () => changeSlide(1));
+
+    let indicators = document.getElementsByClassName("slide-indicator");
+    for (let i = 0; i < indicators.length; i++) {
+        // Use an immediately invoked function expression (IIFE) to capture the correct index
+        (function (index) {
+            indicators[index].addEventListener('click', function () {
+                changeSlide(index - slideIndex);
+            });
+        })(i);
+    }
+});
