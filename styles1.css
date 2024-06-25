@@ -641,6 +641,12 @@ a {
 }
 
 
+.features {
+    padding: 50px 0 10px;
+    text-align: right;
+    background-color: #7996a3;
+}
+
 .container h2 {
     display: inline-block;
     margin: 40px 450px 100px 0;
@@ -654,14 +660,8 @@ a {
     background-color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    color: #7996a3;
+    color: #000;
     text-align: center;
-}
-
-.features {
-    padding: 50px 0 10px;
-    text-align: right;
-    background-color: #7996a3;
 }
 
 .features-container {
