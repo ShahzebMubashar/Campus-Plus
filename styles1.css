@@ -654,14 +654,14 @@ a {
     background-color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    color: #000;
+    color: #7996a3;
     text-align: center;
 }
 
 .features {
     padding: 50px 0 10px;
     text-align: right;
-    background-color: #a0bccc;
+    background-color: #7996a3;
 }
 
 .features-container {
@@ -679,15 +679,15 @@ a {
     position: relative;
     border-radius: 10px;
     transition: transform 0.3s;
-    box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.8);
-    /* Shadow effect */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 .feature:hover {
     transform: translateY(-10px);
 }
 
-#feature1img,
+/* #feature1img,
 #feature2img,
 #feature3img {
     text-align: center;
@@ -695,12 +695,11 @@ a {
     height: auto;
     width: 70%;
     margin: 5% 14%;
-    /* Adjusted margin */
-}
+} */
 
 .feature-content {
     padding: 20px 30px;
-    background-color: #fff;
+    background-color: #f0f8ff;
     background-position: -10px;
     border-radius: 10px;
     position: relative;
@@ -714,32 +713,34 @@ a {
     text-align: center;
     font-size: 27px;
     margin-bottom: 10px;
+    color: #000;
+    font-weight: 800;
+    margin-right: 5%;
 }
 
 .feature-content p {
     text-align: justify;
     font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    margin-left: 2%;
 }
 
 .btn {
     background-color: #000;
-    color: #fff;
+    color: #000;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
     font-size: 16px;
-    margin-left: 15px;
-    /* Adjust margin */
     margin-bottom: 3%;
 }
 
 .btn.more {
-    background-color: #007bff;
-    /* Blue color for sign up button */
+    background-color: transparent;
     margin-top: 10%;
-    margin-left: 28%;
+    margin-left: 2%;
     padding: 2% 5%;
-    border-radius: 20px;
+    border-radius: 5px;
     text-decoration: none;
 }
 
