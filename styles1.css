@@ -657,7 +657,7 @@ a {
 }
 
 .container h2 span {
-    background-color: white;
+    background-color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     color: #000;
@@ -687,15 +687,6 @@ a {
     transform: translateY(-10px);
 }
 
-/* #feature1img,
-#feature2img,
-#feature3img {
-    text-align: center;
-    width: auto;
-    height: auto;
-    width: 70%;
-    margin: 5% 14%;
-} */
 
 .feature-content {
     padding: 20px 30px;
@@ -765,6 +756,9 @@ a {
     position: absolute;
     margin-top: -0.3%;
 }
+
+
+
 
 .youtube-section {
     display: flex;
