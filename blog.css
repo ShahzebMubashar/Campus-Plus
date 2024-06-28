@@ -1,17 +1,17 @@
-body {
+.blog-section {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
     margin: 0;
     padding: 20px;
 }
 
-.container {
+.blog-container {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.heading {
+.blog-heading {
     margin-bottom: 20px;
 }
 
