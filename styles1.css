@@ -928,8 +928,9 @@ a {
     justify-content: space-between;
     gap: 20px;
     /* Adjust the gap between cards if necessary */
-    padding-block: 40px 52px;
+
     margin-bottom: 15%;
+
 }
 
 .category .grid-list li {
