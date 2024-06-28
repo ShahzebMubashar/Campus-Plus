@@ -1,10 +1,10 @@
-body {
+.newsandevents {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.events-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -38,6 +38,7 @@ body {
     width: 50%;
     height: 60%;
     margin-top: 4.8%;
+    margin-left: 1%;
 }
 
 .left-news-item {
@@ -119,7 +120,7 @@ body {
     text-decoration: none;
 }
 
-.image {
+.top-image {
     width: 100%;
     margin-bottom: 20px;
     height: 600px;
