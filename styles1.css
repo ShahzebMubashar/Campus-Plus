@@ -1279,151 +1279,125 @@ a {
 
 
 
-/* Reset default list styles */
-.grid-list {
-    display: flex;
-    gap: 20px;
-    /* Adjust the gap between cards */
-    overflow-x: auto;
-    /* Enable horizontal scrolling if necessary */
-    padding: 0;
-    list-style: none;
+.blog-section {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
     margin: 0;
-    scrollbar-width: none;
-    /* Hide scrollbar in supporting browsers */
-    -ms-overflow-style: none;
-    /* Hide scrollbar in IE/Edge */
-}
-
-.grid-list::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar in WebKit browsers */
-}
-
-/* Style for each individual blog card */
-.blog-card {
-    background-color: var(--white);
-    border-radius: var(--radius-10);
-    box-shadow: var(--shadow-3);
-    overflow: hidden;
-    width: 30%;
-    /* Adjust width as needed */
-    position: relative;
-    /* Ensure position context for absolute positioned elements */
-    display: inline-block;
-    /* Align cards horizontally */
-    vertical-align: top;
-    /* Align cards to the top of the container */
-    margin-right: 20px;
-    /* Adjust margin between cards */
-}
-
-/* Adjust the last blog card to remove margin right */
-.blog-card:last-child {
-    margin-right: 0;
-}
-
-/* Banner and image styling */
-.blog-card .blog-card-banner {
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--radius-10) var(--radius-10) 0 0;
-    width: 100%;
-    height: 200px;
-    /* Adjust height as needed */
-}
-
-.blog-card .blog-card-banner .blog-img-cover {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-/* Overlay effect on hover */
-.blog-card:hover .blog-card-banner::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent overlay */
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.blog-card:hover .blog-card-banner .blog-img-cover {
-    transform: scale(1.1);
-}
-
-.blog-card:hover .blog-card-banner::after {
-    opacity: 1;
-    /* Show overlay on hover */
-}
-
-/* Card content styling */
-.blog-card .card-content {
     padding: 20px;
-    background-color: var(--white);
 }
 
-.blog-card .blog-card-btn {
-    position: absolute;
-    top: -40px;
-    right: 30px;
-    background-color: var(--kappel);
-    color: var(--white);
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 50%;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    opacity: 0;
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.blog-card:hover .blog-card-btn,
-.blog-card:focus-within .blog-card-btn {
-    opacity: 1;
-    transform: translateY(10px);
+.blog-heading h3 {
+    margin-top: 5%;
 }
 
-/* Additional card text and meta information */
-.blog-card .card-subtitle {
-    text-transform: uppercase;
-    font-size: var(--fs-5);
+.blog-heading h1 {
+    color: #000;
+    margin: 2% 0;
+    font-size: 35px;
 }
 
-.blog-card .card-title {
-    margin: 10px 0 15px;
-    font-size: var(--fs-5);
-    transition: color 0.3s ease;
-}
-
-.blog-card:hover .card-title,
-.blog-card:focus .card-title {
-    color: var(--kappel);
-}
-
-.blog-card .card-meta-list {
+.blog-section {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-.blog-card .card-meta-item {
+.blog-card {
+    background: transparent;
+    border-radius: 8px;
+    width: 40%;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.blog-card img {
+    width: 90%;
+    height: auto;
+    transform: translateX(-5%);
+    transition: transform 0.3s;
+    border-radius: 20px 20px;
+}
+
+.blog-content {
+    padding: 15px;
+    text-align: left;
+    position: relative;
+    background: #fff;
+    margin-top: -50px;
+    z-index: 1;
+    border-radius: 5%;
+    width: 80%;
+    margin-left: 6%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+    line-height: 1.5;
+}
+
+.blog-content h3 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    transition: color 0.3s;
+}
+
+.blog-content p {
+    color: #777;
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding: 0px 0;
+}
+
+.blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.blog-footer span {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: var(--eerie-black-1);
+    color: blue;
 }
 
-.blog-card .card-meta-item ion-icon {
-    color: var(--kappel);
-    font-size: 18px;
-    --ionicon-stroke-width: 40px;
+.blog-footer span i {
+    margin-right: 5px;
 }
 
-.blog-card .card-text {
-    font-size: var(--fs-5);
+.blog-hover-arrow {
+    position: absolute;
+    top: -18px;
+    left: 230px;
+    background: #00b894;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.blog-card:hover img {
+    transform: scale(1.1) translateX(-5%);
+    border-radius: 20px 20px;
+}
+
+.blog-card:hover .blog-content h3 {
+    color: #00b894;
+}
+
+.blog-card:hover .blog-hover-arrow {
+    opacity: 1;
 }
 
 
