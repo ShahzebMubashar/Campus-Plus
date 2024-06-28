@@ -1395,7 +1395,7 @@ a {
 }
 
 .blog-card:hover .blog-content h3 {
-    color: blue;
+    color: hsla(230, 75%, 32%, 0.85);
 }
 
 .blog-card:hover .blog-hover-arrow {
