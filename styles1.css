@@ -1176,14 +1176,20 @@ a {
     background-repeat: no-repeat;
 }
 
-.video-banner {
+.video-banner-img-holder-has-after img {
     position: relative;
     border-top-right-radius: 80px;
     border-bottom-left-radius: 120px;
 }
 
-.video .play-btn {
-    position: absolute;
+.video-banner-img-holder-has-after img {
+    margin-bottom: -55%;
+    margin-top: 20%;
+    margin-left: 7%;
+}
+
+.video-banner-img-holder-has-after .play-btn {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1193,7 +1199,7 @@ a {
     color: var(--white);
     border-radius: var(--radius-circle);
     box-shadow: 0 0 0 0 var(--white_50);
-    z-index: 1;
+    z-index: 10;
     animation: pulse 3s ease infinite;
 }
 
