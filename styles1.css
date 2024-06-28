@@ -1171,25 +1171,46 @@ a {
 \*-----------------------------------*/
 
 .video {
-    background-size: contain;
+    background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensure the section takes the full viewport height */
 }
 
-.video-banner-img-holder-has-after img {
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Make the container take full width */
+}
+
+.video-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+}
+
+.video-banner {
+    position: relative;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 120px;
+    margin-left: 8%;
+    z-index: 10;
+}
+
+.img-cover {
     border-top-right-radius: 80px;
     border-bottom-left-radius: 120px;
 }
 
-.video-banner-img-holder-has-after img {
-    margin-bottom: -55%;
-    margin-top: 20%;
-    margin-left: 7%;
-}
-
-.video-banner-img-holder-has-after .play-btn {
-    position: relative;
+.video .play-btn {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1199,7 +1220,7 @@ a {
     color: var(--white);
     border-radius: var(--radius-circle);
     box-shadow: 0 0 0 0 var(--white_50);
-    z-index: 10;
+    z-index: 1;
     animation: pulse 3s ease infinite;
 }
 
@@ -1214,9 +1235,29 @@ a {
 }
 
 .video-banner::after {
+    content: "";
+    position: absolute;
     inset: 0;
     background-color: var(--black_30);
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 120px;
 }
+
+.video-shape-1 {
+    position: absolute;
+    left: -10%;
+    top: -7%;
+}
+
+
+.video-shape-2 {
+    position: absolute;
+    bottom: 83%;
+    left: 88%;
+}
+
+
+
 
 
 
