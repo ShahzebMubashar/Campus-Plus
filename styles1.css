@@ -67,7 +67,7 @@
     --fs-2: 3.2rem;
     --fs-3: 2.3rem;
     --fs-4: 1.8rem;
-    --fs-5: 1.5rem;
+    --fs-5: 1rem;
     --fs-6: 1.4rem;
     --fs-7: 1.3rem;
 
@@ -1278,6 +1278,153 @@ a {
 }
 
 
+
+/* Reset default list styles */
+.grid-list {
+    display: flex;
+    gap: 20px;
+    /* Adjust the gap between cards */
+    overflow-x: auto;
+    /* Enable horizontal scrolling if necessary */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    scrollbar-width: none;
+    /* Hide scrollbar in supporting browsers */
+    -ms-overflow-style: none;
+    /* Hide scrollbar in IE/Edge */
+}
+
+.grid-list::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in WebKit browsers */
+}
+
+/* Style for each individual blog card */
+.blog-card {
+    background-color: var(--white);
+    border-radius: var(--radius-10);
+    box-shadow: var(--shadow-3);
+    overflow: hidden;
+    width: 30%;
+    /* Adjust width as needed */
+    position: relative;
+    /* Ensure position context for absolute positioned elements */
+    display: inline-block;
+    /* Align cards horizontally */
+    vertical-align: top;
+    /* Align cards to the top of the container */
+    margin-right: 20px;
+    /* Adjust margin between cards */
+}
+
+/* Adjust the last blog card to remove margin right */
+.blog-card:last-child {
+    margin-right: 0;
+}
+
+/* Banner and image styling */
+.blog-card .blog-card-banner {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-10) var(--radius-10) 0 0;
+    width: 100%;
+    height: 200px;
+    /* Adjust height as needed */
+}
+
+.blog-card .blog-card-banner .blog-img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Overlay effect on hover */
+.blog-card:hover .blog-card-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blog-card:hover .blog-card-banner .blog-img-cover {
+    transform: scale(1.1);
+}
+
+.blog-card:hover .blog-card-banner::after {
+    opacity: 1;
+    /* Show overlay on hover */
+}
+
+/* Card content styling */
+.blog-card .card-content {
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.blog-card .blog-card-btn {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    background-color: var(--kappel);
+    color: var(--white);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+}
+
+.blog-card:hover .blog-card-btn,
+.blog-card:focus-within .blog-card-btn {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+/* Additional card text and meta information */
+.blog-card .card-subtitle {
+    text-transform: uppercase;
+    font-size: var(--fs-5);
+}
+
+.blog-card .card-title {
+    margin: 10px 0 15px;
+    font-size: var(--fs-5);
+    transition: color 0.3s ease;
+}
+
+.blog-card:hover .card-title,
+.blog-card:focus .card-title {
+    color: var(--kappel);
+}
+
+.blog-card .card-meta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.blog-card .card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--eerie-black-1);
+}
+
+.blog-card .card-meta-item ion-icon {
+    color: var(--kappel);
+    font-size: 18px;
+    --ionicon-stroke-width: 40px;
+}
+
+.blog-card .card-text {
+    font-size: var(--fs-5);
+}
 
 
 

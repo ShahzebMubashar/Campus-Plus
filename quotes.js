@@ -1,5 +1,6 @@
 let slideIndex = 0;
 showSlides(slideIndex);
+autoSlide();
 
 function changeSlide(n) {
     showSlides(slideIndex += n);
@@ -33,6 +34,12 @@ function showSlides(n) {
 
     slides[nextIndex].style.display = "block";
     slides[nextIndex].classList.add("next-slide");
+}
+
+function autoSlide() {
+    slideIndex++;
+    showSlides(slideIndex);
+    setTimeout(autoSlide, 3000); // Change slide every 3 seconds
 }
 
 document.addEventListener('DOMContentLoaded', function () {
