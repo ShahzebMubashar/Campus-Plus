@@ -1135,33 +1135,30 @@ a {
     --ionicon-stroke-width: 50px;
 }
 
-.course-card .btn {
-    margin-top: 20px;
+.btn-has-before {
+    margin-top: 60px;
     /* Added margin-top */
     padding: 12px 24px;
     background-color: blue;
-    /* Changed background color to blue */
     color: white;
-    /* Changed text color to white */
     border: none;
     border-radius: var(--radius-5);
     font-size: 1em;
     cursor: pointer;
     display: inline-flex;
-    /* Changed to inline-flex */
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s;
 }
 
-.course-card .btn:hover {
+.btn-has-before:hover {
     background-color: darkblue;
-    /* Darken background color on hover */
 }
 
-.course-card .btn .span {
+.btn-has-before .span {
     font-size: 0.8em;
 }
+
 
 
 
