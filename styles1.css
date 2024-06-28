@@ -136,9 +136,9 @@
     --headline-lg: 4.8rem;
     --headline-md: 3rem;
     --headline-sm: 2.4rem;
-    --title-lg: 2.2rem;
+    --title-lg: 1.2rem;
     --title-md: 2rem;
-    --title-sm: 1.8rem;
+    --title-sm: 1rem;
 
     --fw-500: 500;
     --fw-600: 600;
@@ -922,10 +922,20 @@ a {
 }
 
 
-
-
-.category-grid-list {
+.category .grid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* Adjust the gap between cards if necessary */
     padding-block: 40px 52px;
+    margin-bottom: 15%;
+}
+
+.category .grid-list li {
+    flex: 1 1 calc(33.333% - 20px);
+    /* Each card takes up one-third of the container minus the gap */
+    max-width: calc(33.333% - 20px);
 }
 
 .category-card {
@@ -933,6 +943,11 @@ a {
     align-items: flex-start;
     gap: 20px;
     border-inline-start: 4px solid transparent;
+    padding: 20px;
+    background-color: #fff;
+    /* Add background color if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add shadow if needed */
 }
 
 .category-card:is(:hover, :focus-within) {
@@ -943,9 +958,28 @@ a {
     margin-block-start: 4px;
 }
 
-.category-btn {
-    margin-inline: auto;
+.category .btn {
+    display: block;
+    margin: 40px auto 0 auto;
+    /* Center the button and add margin-top */
+    padding: 12px 24px;
+    background-color: var(--blue-dark);
+    /* Use the blue-dark color */
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-5);
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
 }
+
+.category .btn:hover {
+    background-color: darken(var(--blue-dark), 10%);
+    /* Darken the button on hover */
+}
+
+
 
 
 
