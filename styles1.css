@@ -955,7 +955,6 @@ a {
 }
 
 
-/* Courses Section */
 .course {
     background-color: var(--isabelline);
     padding: 40px 0;
@@ -970,7 +969,6 @@ a {
 .course .section-subtitle {
     font-size: 1.2em;
     color: #6c757d;
-
 }
 
 .course .section-title {
@@ -1023,10 +1021,6 @@ a {
 .course-card:hover .img-cover {
     transform: scale(1.1);
     /* Zoom effect on hover */
-}
-
-.course-card:is(:hover, :focus-within) .img-cover {
-    transform: scale(1.1);
 }
 
 .course-card .abs-badge {
@@ -1115,9 +1109,10 @@ a {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
-    margin: 0;
+    margin-top: 1%;
     padding: 0;
     list-style: none;
+    width: 62%;
 }
 
 .course-card .card-meta-item {
@@ -1132,7 +1127,7 @@ a {
     content: "|";
     display: inline-block;
     color: var(--platinum);
-    padding: 0px;
+    padding: 0;
 }
 
 .course-card .card-meta-item ion-icon {
@@ -1141,29 +1136,32 @@ a {
 }
 
 .course-card .btn {
-    margin-inline: auto;
-    margin-block-start: 60px;
+    margin-top: 20px;
+    /* Added margin-top */
     padding: 12px 24px;
-    background-color: var(--kappel);
-    color: var(--white);
+    background-color: blue;
+    /* Changed background color to blue */
+    color: white;
+    /* Changed text color to white */
     border: none;
     border-radius: var(--radius-5);
     font-size: 1em;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
+    /* Changed to inline-flex */
     align-items: center;
     gap: 10px;
     transition: background-color 0.3s;
 }
 
 .course-card .btn:hover {
-    background-color: var(--kappel-dark);
+    background-color: darkblue;
+    /* Darken background color on hover */
 }
 
 .course-card .btn .span {
     font-size: 0.8em;
 }
-
 
 
 
