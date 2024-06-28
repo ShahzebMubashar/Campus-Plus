@@ -1074,6 +1074,7 @@ a {
     margin-block: 15px 8px;
     font-size: 1.1em;
     transition: color 0.3s;
+    color: #000;
 }
 
 .course-card .card-title:is(:hover, :focus) {
@@ -1131,7 +1132,7 @@ a {
     content: "|";
     display: inline-block;
     color: var(--platinum);
-    padding-inline: 10px;
+    padding: 0px;
 }
 
 .course-card .card-meta-item ion-icon {
@@ -1160,7 +1161,7 @@ a {
 }
 
 .course-card .btn .span {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 
