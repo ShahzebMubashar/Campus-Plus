@@ -745,7 +745,7 @@ a {
     max-width: 40%;
     margin-top: 8%;
     margin-right: 6%;
-    font-family: cursive;
+    font-family: "Poppins", "Sans-serif";
     line-height: 1.6;
 }
 
@@ -784,7 +784,6 @@ a {
     font-weight: bold;
     cursor: pointer;
 }
-
 
 .whycplus-button:hover {
     background-color: #0056b3;
