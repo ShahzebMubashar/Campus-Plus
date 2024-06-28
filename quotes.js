@@ -1,5 +1,6 @@
 let slideIndex = 0;
 showSlides(slideIndex);
+autoSlide();
 
 function changeSlide(n) {
     showSlides(slideIndex += n);
