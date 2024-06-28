@@ -109,6 +109,14 @@
 
 }
 
+ion-icon {
+    pointer-events: none;
+}
+
+
+ion-icon {
+    display: block;
+}
 
 
 @media screen and (min-width: 1024px) {
