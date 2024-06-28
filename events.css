@@ -24,10 +24,14 @@ body {
     margin-bottom: 20px;
 }
 
+.left-section .news-item {
+    border-bottom: 2px solid #e6e6e6;
+}
+
 .left-section h2 {
     color: #b31b1b;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
 }
 
 .left-section-1 {
@@ -82,13 +86,13 @@ body {
 .right-section-1 h2 {
     color: #b31b1b;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
 }
 
 .right-section-2 h2 {
     color: #b31b1b;
     font-size: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
 }
 
 .news-item,
