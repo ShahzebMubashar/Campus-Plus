@@ -1437,17 +1437,17 @@ a {
 
 .testimonial-section h2 {
     font-size: 36px;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
 }
 
 .testimonial-section p {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 4%;
 }
 
 .slideshow-container {
     position: relative;
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -1457,14 +1457,14 @@ a {
 
 .testimonial-slide {
     display: none;
-    width: 300px;
-    height: 350px;
-    padding: 20px;
+    width: 400px;
+    height: 450px;
+    padding: 40px;
     background-color: #0d5a80;
     border-radius: 8px;
     margin: 0 10px;
     transition: opacity 0.5s ease;
-    /* Smooth transition for opacity and transform */
+    margin-bottom: 2.5%;
 }
 
 .testimonial-slide p {
@@ -1496,7 +1496,7 @@ a {
 }
 
 .slideshow-controls {
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .slideshow-controls .prev,
