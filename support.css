@@ -73,6 +73,8 @@ nav a {
 
 .featured-articles {
     padding: 20px;
+    background-color: #fffafa;
+    /* Snow white background */
 }
 
 .featured-articles h2 {
@@ -104,8 +106,7 @@ nav a {
 
 .faq-item {
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
+    border-bottom: none;
 }
 
 .faq-question {
@@ -128,19 +129,26 @@ nav a {
     font-size: 16px;
 }
 
+.faq-answer+.faq-item {
+    border-top: 1px solid #ccc;
+}
+
 .arrow {
     font-size: 18px;
 }
 
 .contact-support {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     padding: 40px;
     background-color: #e9f7fe;
 }
 
-.contact-support button {
+.contact-button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #0056b3;
+    /* Dark bluish button */
     color: #fff;
     border: none;
     border-radius: 4px;
