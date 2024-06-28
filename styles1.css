@@ -952,7 +952,7 @@ a {
 }
 
 .category-card:is(:hover, :focus-within) {
-    border-color: var(--light-coral);
+    border-color: blue;
 }
 
 .category-card .title-sm {
@@ -962,10 +962,8 @@ a {
 .category .btn {
     display: block;
     margin: 40px auto 0 auto;
-    /* Center the button and add margin-top */
     padding: 12px 24px;
-    background-color: var(--blue-dark);
-    /* Use the blue-dark color */
+    background-color: blue;
     color: #fff;
     border: none;
     border-radius: var(--radius-5);
@@ -976,10 +974,12 @@ a {
 }
 
 .category .btn:hover {
-    background-color: darken(var(--blue-dark), 10%);
-    /* Darken the button on hover */
+    background-color: darkblue;
 }
 
+.category .btn {
+    margin-inline: auto;
+}
 
 
 
@@ -2164,7 +2164,7 @@ li {
 }
 
 .btn {
-    --bg: var(--light-coral);
+    --bg: blue;
     max-width: max-content;
     background-color: var(--bg);
     color: var(--white);
@@ -2176,7 +2176,7 @@ li {
 }
 
 .btn-secondary {
-    --bg: var(--oxford-blue);
+    --bg: blue;
 }
 
 :is(.btn-primary, .btn-secondary):is(:hover, :focus-visible) {
