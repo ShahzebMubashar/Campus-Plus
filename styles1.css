@@ -867,6 +867,12 @@ a {
     margin-inline: auto;
 }
 
+.section-title .span {
+    background-color: white;
+    border-radius: 2%;
+    padding: 0.5%;
+}
+
 
 
 
