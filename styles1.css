@@ -803,133 +803,19 @@ a {
 
 
 
-.features {
-    padding: 50px 0 10px;
-    text-align: right;
-    background-color: hsl(210, 100%, 20%);
+.section.category.has-bg-image {
+    background-image: url('./assets/images/newbg2.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.container h2 {
-    display: inline-block;
-    margin: 40px 450px 100px 0;
-    border-radius: 5px;
-    font-size: 40px;
-    color: #fff;
-    text-align: center;
-}
-
-.container h2 span {
-    background-color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #000;
-    text-align: center;
-}
-
-.features-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1%;
-}
-
-.feature {
-    text-align: left;
-    margin-bottom: 40px;
-    flex: 0 1 100%;
-    margin: -20px 15px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    transition: transform 0.3s;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-    background-color: #fff;
-
-}
-
-.feature:hover {
-    transform: translateY(-10px);
-}
-
-
-.feature-content {
-    padding: 20px 30px;
-    background-color: #f0f8ff;
-    background-position: -10px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease-in-out;
-}
-
-
-.feature-content h3 {
-    text-align: center;
-    font-size: 27px;
-    margin-bottom: 10px;
-    color: #000;
-    font-weight: 800;
-    margin-right: 5%;
-}
-
-.feature-content p {
-    text-align: justify;
-    font-size: 16px;
-    color: #000;
-    font-weight: 400;
-    margin-left: 2%;
-}
-
-.btn {
-    background-color: #000;
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 16px;
-    margin-bottom: 3%;
-}
-
-.btn.more {
-    background-color: transparent;
-    margin-top: 10%;
-    margin-left: 2%;
-    padding: 2% 5%;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn.more:hover,
-.button_ft:hover {
-    background-color: #333;
-    cursor: pointer;
-}
-
-.button_ft {
-    background-color: transparent;
-    border: 2px solid white;
-    margin: 6% 46% 5% 0;
-    padding: 1% 1.5%;
-    border-radius: 30px;
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-.button_ft i {
-    position: absolute;
-    margin-top: -0.3%;
-}
-
 
 .category .grid-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    /* Adjust the gap between cards if necessary */
-
-    margin-bottom: 15%;
+    margin-top: 8%;
 
 }
 
