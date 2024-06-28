@@ -1279,6 +1279,8 @@ a {
 
 
 
+
+
 .blog-section {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
@@ -1364,7 +1366,7 @@ a {
 .blog-footer span {
     display: flex;
     align-items: center;
-    color: blue;
+    color: #007bff;
 }
 
 .blog-footer span i {
@@ -1375,7 +1377,7 @@ a {
     position: absolute;
     top: -18px;
     left: 230px;
-    background: #00b894;
+    background: #007bff;
     color: #fff;
     border-radius: 50%;
     width: 50px;
@@ -1393,7 +1395,7 @@ a {
 }
 
 .blog-card:hover .blog-content h3 {
-    color: #00b894;
+    color: blue;
 }
 
 .blog-card:hover .blog-hover-arrow {
