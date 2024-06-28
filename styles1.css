@@ -737,7 +737,7 @@ a {
 .features {
     padding: 50px 0 10px;
     text-align: right;
-    background-color: #7996a3;
+    background-color: hsl(210, 100%, 20%);
 }
 
 .container h2 {
@@ -955,8 +955,11 @@ a {
 }
 
 
+
+
+
 .course {
-    background-color: var(--isabelline);
+    background-color: #f0f8ff;
     padding: 40px 0;
 }
 
