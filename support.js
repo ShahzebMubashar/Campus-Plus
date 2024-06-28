@@ -4,10 +4,10 @@ document.querySelectorAll('.faq-question').forEach(button => {
         const arrow = button.querySelector('.arrow');
         if (answer.style.display === 'block') {
             answer.style.display = 'none';
-            arrow.textContent = '▼';
+            arrow.textContent = '+';
         } else {
             answer.style.display = 'block';
-            arrow.textContent = '▲';
+            arrow.textContent = '-';
         }
     });
 });

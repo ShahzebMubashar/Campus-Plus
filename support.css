@@ -53,23 +53,32 @@ nav a {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    position: relative;
 }
 
 .search-bar input {
-    padding: 10px;
+    padding: 10px 40px 10px 10px;
+    /* Adjusted padding to make space for the icon */
     width: 300px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
 .search-bar button {
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    position: absolute;
+    right: 39%;
+    top: 40%;
+    transform: translateY(-50%);
+    background: none;
     border: none;
-    border-radius: 4px;
-    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000;
+    /* Make the icon color black */
+    padding: 0;
+    /* Remove any default padding */
 }
+
 
 .featured-articles {
     padding: 20px;
@@ -106,7 +115,7 @@ nav a {
 
 .faq-item {
     margin-bottom: 20px;
-    border-bottom: none;
+    border-bottom: 1px solid #ccc;
 }
 
 .faq-question {
@@ -127,10 +136,8 @@ nav a {
     display: none;
     padding: 10px;
     font-size: 16px;
-}
-
-.faq-answer+.faq-item {
-    border-top: 1px solid #ccc;
+    border: none;
+    /* Remove border from answer */
 }
 
 .arrow {
@@ -140,15 +147,15 @@ nav a {
 .contact-support {
     width: 80%;
     margin: 0 auto;
-    text-align: center;
     padding: 40px;
     background-color: #e9f7fe;
+    text-align: center;
 }
 
-.contact-button {
+.contact-support .contact-button {
     padding: 10px 20px;
-    background-color: #0056b3;
-    /* Dark bluish button */
+    background-color: #00008b;
+    /* Dark bluish color */
     color: #fff;
     border: none;
     border-radius: 4px;
