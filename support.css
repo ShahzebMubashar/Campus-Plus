@@ -107,6 +107,7 @@ nav a {
     border-radius: 4px;
 }
 
+
 .faq {
     width: 80%;
     margin: 0 auto;
@@ -133,16 +134,19 @@ nav a {
 }
 
 .faq-answer {
-    display: none;
-    padding: 10px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 10px;
     font-size: 16px;
     border: none;
-    /* Remove border from answer */
+    transition: max-height 0.3s ease;
+    margin-bottom: 1%;
 }
 
 .arrow {
     font-size: 18px;
 }
+
 
 .contact-support {
     width: 80%;
