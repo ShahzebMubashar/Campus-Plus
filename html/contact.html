@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="../assets/css/contact.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+
+    <script>
+        (function () {
+            emailjs.init("jg7Is29lCuKpAdZxd"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+        })();
+    </script>
 </head>
 
 <body>
     <div class="contact_us_8">
         <div class="responsive-container-block container">
-            <form class="form-box" action="send_email.php" method="POST"> <!-- Updated action attribute -->
+            <form id="contact-form" class="form-box"> <!-- Updated action attribute -->
                 <div class="container-block form-wrapper">
                     <div class="responsive-container-block">
                         <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="i10mt-9">
-                            <input class="input" id="ijowk-9" name="name" placeholder="First Name" required>
+                            <input class="input" id="ijowk-9" name="name" placeholder="Full Name" required>
                             <!-- Added name attribute -->
                         </div>
                         <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-8 wk-ipadp-12" id="ieakm">
@@ -76,6 +84,21 @@
             </form>
         </div>
     </div>
+
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            console.log('Name:', this.elements['name'].value); // Log the value of 'name' input field
+            console.log('Email:', this.elements['email'].value);
+            emailjs.sendForm('service_mj3k7tm', 'template_3yduvdn', this)
+                .then(() => {
+                    alert('Sent!');
+                }, (err) => {
+                    alert(JSON.stringify(err));
+                });
+        });
+    </script>
 </body>
 
 </html>

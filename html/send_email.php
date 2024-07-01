@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // Set up email parameters
-    $to = 'productionsbymultidexters@gmail.com'; // Replace with your email address
+    $to = 'productionsbymultidexters@gmail.com';
     $subject = 'New Contact Form Submission';
     $message_content = "
     Name: $name\n
@@ -28,4 +28,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: contact.html");
     exit;
 }
-?>
