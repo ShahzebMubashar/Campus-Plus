@@ -350,11 +350,11 @@
     }
 
     .dropdown__link {
-        font-size: var(--small-font-size);
+        font-size: 0.813rem;
     }
 
     .dropdown__link:hover {
-        color: var(--first-color);
+        color: hsl(220, 68%, 54%);
     }
 
     .dropdown__item {
