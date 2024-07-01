@@ -742,7 +742,7 @@ a {
 
 
 
-
+/*=============== PAST PAPERS ===============*/
 .section.category.has-bg-image {
     background-image: url('./assets/images/newbg2.png');
     background-size: 100% auto;
@@ -815,8 +815,7 @@ a {
 
 
 
-
-
+/*=============== YOUTUBE PLAYLISTS ===============*/
 .course {
     background-color: #f0f8ff;
     padding: 40px 0;
@@ -1024,10 +1023,7 @@ a {
 
 
 
-/*-----------------------------------*\
-  #VIDEO
-\*-----------------------------------*/
-
+/*=============== YOUTUBE VIDEO ===============*/
 .video {
     background-size: cover;
     background-position: center top;
@@ -1118,6 +1114,7 @@ a {
 
 
 
+/*=============== NEWS & EVENTS ===============*/
 .newsandevents {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -1259,6 +1256,7 @@ a {
 
 
 
+/*=============== NAV ===============*/
 .quotes {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #c8d8e6;
