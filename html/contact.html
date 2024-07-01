@@ -89,7 +89,7 @@
     <script>
         document.getElementById('contact-form').addEventListener('submit', function (event) {
             event.preventDefault();
-            console.log('Name:', this.elements['name'].value); // Log the value of 'name' input field
+            console.log('Name:', this.elements['name'].value);
             console.log('Email:', this.elements['email'].value);
             emailjs.sendForm('service_mj3k7tm', 'template_3yduvdn', this)
                 .then(() => {
