@@ -426,18 +426,58 @@ a {
 
 
 
+/* Schools Container */
+.schools-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 120px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.school-box {
+    background-color: #1e3d59;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.school-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Faculty Container */
 .faculty-container {
     max-width: 90%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .faculty-container h1 {
     text-align: left;
     color: #004494;
     margin-left: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.faculty-container h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    height: 3px;
+    background-color: #004494;
 }
 
 .faculty-grid {
@@ -464,7 +504,6 @@ a {
     margin: 10px auto;
     display: block;
 }
-
 
 .faculty-card h3 {
     font-size: 20px;
