@@ -1256,7 +1256,7 @@ a {
 
 
 
-/*=============== NAV ===============*/
+/*=============== TESTIMONIALS/QUOTES ===============*/
 .quotes {
     font-family: 'Helvetica Neue', sans-serif;
     background-color: #c8d8e6;
@@ -1382,7 +1382,7 @@ a {
 
 
 
-
+/*=============== BLOGGING ===============*/
 .blog-section {
     font-family: Arial, sans-serif;
     background-color: #fafafa;
@@ -1506,7 +1506,7 @@ a {
 
 
 
-
+/*=============== FAQs ===============*/
 .faq {
     width: 80%;
     margin: 0 auto;
@@ -1555,7 +1555,7 @@ a {
 
 
 
-
+/*=============== FOOTER ===============*/
 .footer-div {
     max-width: 100%;
     overflow-x: hidden;
@@ -2117,10 +2117,7 @@ address a:hover {
 
 
 
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
+/*=============== REUSED CSS ===============*/
 .container {
     padding-inline: 16px;
 }
