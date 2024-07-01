@@ -1,3 +1,19 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938rem;
+    background-color: #f0f8ff;
+    color: hsl(220, 12%, 45%);
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -441,20 +457,4 @@
 .faculty-card .contact-info {
     font-size: 0.9em;
     color: #888888;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    font-size: 0.938rem;
-    background-color: hsl(220, 100%, 99%);
-    color: hsl(220, 12%, 45%);
-    overflow-x: hidden;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
