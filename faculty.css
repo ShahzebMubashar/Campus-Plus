@@ -386,7 +386,7 @@
         position: fixed;
         top: -100%;
         left: 0;
-        background-color: var(--body-color);
+        background-color: hsl(220, 100%, 99%);
         box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
         width: 100%;
         padding-block: 4.5rem 4rem;
