@@ -416,45 +416,55 @@ a {
     }
 }
 
+
+
+
+
 .faculty-container {
-    width: 90%;
-    margin: 20px auto;
-    margin-top: 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .faculty-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
 }
 
 .faculty-card {
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    max-width: 250px;
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .faculty-card img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 .faculty-card h3 {
-    margin: 10px 0 5px;
+    font-size: 20px;
+    margin: 15px 0;
 }
 
 .faculty-card p {
-    margin: 5px 0;
-    color: #555555;
+    color: #666;
+    margin: 10px 0;
 }
 
 .faculty-card .contact-info {
-    font-size: 0.9em;
-    color: #888888;
+    color: #1e3d59;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.faculty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
