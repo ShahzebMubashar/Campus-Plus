@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .faculty-card {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faculty-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .faculty-card h3 {
+            margin: 10px 0 5px;
+        }
+
+        .faculty-card p {
+            margin: 5px 0;
+            color: #555555;
+        }
+
+        .faculty-card .contact-info {
+            font-size: 0.9em;
+            color: #888888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Faculty Information</h1>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <img src="faculty1.jpg" alt="Faculty Photo">
+                <h3>Dr. John Doe</h3>
+                <p>Professor</p>
+                <p>Department of Computer Science</p>
+                <p class="contact-info">Email: john.doe@example.com</p>
+            </div>
+            <div class="faculty-card">
+                <img src="faculty2.jpg" alt="Faculty Photo">
+                <h3>Dr. Jane Smith</h3>
+                <p>Associate Professor</p>
+                <p>Department of Mathematics</p>
+                <p class="contact-info">Email: jane.smith@example.com</p>
+            </div>
+            <div class="faculty-card">
+                <img src="t1.png" alt="Faculty Photo">
+                <h3>Dr. Emily White</h3>
+                <p>Assistant Professor</p>
+                <p>Department of Physics</p>
+                <p class="contact-info">Email: emily.white@example.com</p>
+            </div>
+            <div class="faculty-card">
+                <img src="t1.png" alt="Faculty Photo">
+                <h3>Dr. Robert Brown</h3>
+                <p>Lecturer</p>
+                <p>Department of Chemistry</p>
+                <p class="contact-info">Email: robert.brown@example.com</p>
+            </div>
+            <!-- Add more faculty cards as needed -->
+        </div>
+    </div>
+</body>
+
+</html>
