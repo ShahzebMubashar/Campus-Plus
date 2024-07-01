@@ -202,8 +202,8 @@ ion-icon {
 }
 
 body {
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.938rem;
     background-color: var(--body-color);
     color: var(--text-color);
     overflow-x: hidden;
