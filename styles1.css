@@ -1725,12 +1725,14 @@ a {
 .ct-footer-list>li .ct-footer-list-header {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #00bff3;
-    font-size: 30px
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .ct-footer-list>li ul {
     list-style: none;
     padding-left: 0;
+    margin: 6px 0;
 }
 
 .ct-footer-list>li ul li a {
