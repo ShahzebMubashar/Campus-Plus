@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-size: 0.938rem;
@@ -421,16 +427,17 @@ a {
 
 
 .faculty-container {
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 10%;
 }
 
 .faculty-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px;
+    gap: 30px;
 }
 
 .faculty-card {
@@ -438,15 +445,19 @@ a {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 250px;
+    width: 22%;
+    max-width: 22%;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .faculty-card img {
-    width: 100%;
+    width: 60%;
     height: auto;
+    margin: 10px auto;
+    display: block;
 }
+
 
 .faculty-card h3 {
     font-size: 20px;
@@ -467,4 +478,6 @@ a {
 .faculty-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    cursor: pointer;
 }
