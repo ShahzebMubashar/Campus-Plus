@@ -3,14 +3,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get form data
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $phone = $_POST['phone'];
     $message = $_POST['message'];
 
     // Set up email parameters
-    $to = 'productionsbymultidexters@gmail.com';
+    $to = 'productionsbymultidexters@gmail.com'; // Replace with your email address
     $subject = 'New Contact Form Submission';
     $message_content = "
     Name: $name\n
     Email: $email\n
+    Phone Number: $phone\n
     Message:\n\n$message
     ";
     $headers = "From: $name <$email>";
