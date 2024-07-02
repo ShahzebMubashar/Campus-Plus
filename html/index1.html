@@ -19,14 +19,7 @@
 
     <!--=============== CSS & JS ===============-->
     <link rel="stylesheet" href="../assets/css/styles1.css" />
-    <script src="main.js"></script>
-
-
-    <!-- Firebase App (the core Firebase SDK) -->
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
-
-    <!-- Firebase Authentication -->
-    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 
 
@@ -230,8 +223,11 @@
             <!-- </div> -->
 
             <div class="nav__actions">
-                <button class="login-button" onclick="login()">Log In</button>
-                <button class="signup-button" onclick="signUp()">Sign Up</button>
+                <button class="login-button" onclick="login()"><a href="login.html"
+                        style="text-decoration: none; color: white;">Log
+                        In</a></button>
+                <button class="signup-button" onclick="signUp()"><a href="login.html"
+                        style="text-decoration: none; color: white;">Sign Up</a></button>
             </div>
         </nav>
     </header>
@@ -460,6 +456,7 @@
 
 
 
+
     <!--=============== Youtube Playlists ===============-->
     <section class="section course" id="courses" aria-label="course">
         <div class="container">
@@ -597,6 +594,7 @@
 
 
 
+
     <!--=============== Youtube Video ===============-->
     <section class="video has-bg-image" aria-label="video" style="background-image: url('./assets/images/newbg1.png');">
         <div class="video-container">
@@ -693,6 +691,7 @@
             </div>
         </div>
     </section>
+
 
 
 
@@ -841,7 +840,7 @@
         </div>
     </section>
 
-    <script src="quotes.js"></script>
+    <script src="../assets/js/quotes.js"></script>
 
 
 
@@ -905,6 +904,7 @@
 
 
 
+
     <!--=============== FAQs ===============-->
     <section class="faq">
         <h2>Frequently Asked Questions (FAQs)</h2>
@@ -925,7 +925,9 @@
         </div>
     </section>
 
-    <script src="support.js"></script>
+    <script src="../assets/js/support.js"></script>
+
+
 
 
     <!--=============== FOOTER ===============-->
@@ -1147,59 +1149,6 @@
     <!--=============== ICONS ===============-->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <script>
-        // Sign-Up function
-        function signUp() {
-            var email = document.getElementById('signup-email').value;
-            var password = document.getElementById('signup-password').value;
-
-            firebase.auth().createUserWithEmailAndPassword(email, password)
-                .then((userCredential) => {
-                    // Signed up successfully
-                    var user = userCredential.user;
-                    console.log('Signed up:', user);
-                })
-                .catch((error) => {
-                    var errorCode = error.code;
-                    var errorMessage = error.message;
-                    console.error('Sign-up error:', errorCode, errorMessage);
-                });
-        }
-
-        // Login function
-        function login() {
-            var email = document.getElementById('login-email').value;
-            var password = document.getElementById('login-password').value;
-
-            firebase.auth().signInWithEmailAndPassword(email, password)
-                .then((userCredential) => {
-                    // Logged in successfully
-                    var user = userCredential.user;
-                    console.log('Logged in:', user);
-                })
-                .catch((error) => {
-                    var errorCode = error.code;
-                    var errorMessage = error.message;
-                    console.error('Login error:', errorCode, errorMessage);
-                });
-        }
-    </script>
-
-
-    <script>
-        // Your web app's Firebase configuration
-        var firebaseConfig = {
-            apiKey: "AIzaSyAEiXirH3d_bZz5qPW3t1tTzpoe9q7F5Q8",
-            authDomain: "cplus-a4199.firebaseapp.com",
-            projectId: "cplus-a4199",
-            storageBucket: "cplus-a4199.appspot.com",
-            messagingSenderId: "585506755493",
-            appId: "1:585506755493:web:db8bf8cd97eac828260e4c"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-    </script>
 
 
 </body>
