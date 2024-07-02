@@ -23,63 +23,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// function showMessage(message, divId) {
-//   var messageDiv = document.getElementById(divId);
-//   messageDiv.style.display = "block";
-//   messageDiv.innerHTML = message;
-//   messageDiv.style.opacity = 1;
-//   setTimeout(function () {
-//     messageDiv.style.opacity = 0;
-//   }, 5000);
-// }
-
-// const signup = document.getElementById("submitSignup");
-// signup.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   const email = document.getElementById("emailSignup").value;
-//   const password = document.getElementById("passwordSignup").value;
-//   const username = document.getElementById("usernameSignup").value;
-
-//   const auth = getAuth();
-//   const db = getFirestore();
-
-//   createUserWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//       const user = userCredential.user;
-//       const userData = {
-//         email: email,
-//         username: username,
-//       };
-//       showMessage("User created successfully", "signUpMessage");
-//       const docRef = doc(db, "users", user.uid);
-//       setDoc(docRef, userData)
-//         .then(() => {
-//           window.location.href = "index.html";
-//         })
-//         .catch((error) => {
-//           console.error("Error adding document: ", error);
-//         });
-//     })
-//     .catch((error) => {
-//       const errorCode = error.code;
-//       if (errorCode === "auth/email-already-in-use") {
-//         showMessage("Email already in use", "signUpMessage");
-//       } else {
-//         showMessage("Unable To Create User", "signUpMessage");
-//       }
-//     });
-// });
-
-function showMessage(message, divId) {
-    const messageDiv = document.getElementById(divId);
-    messageDiv.style.display = "block";
-    messageDiv.innerHTML = message;
-    messageDiv.style.opacity = 1;
-    setTimeout(function () {
-        messageDiv.style.opacity = 0;
-    }, 5000);
-}
-
 const signup = document.getElementById("submitSignup");
 signup.addEventListener("click", (event) => {
     event.preventDefault();
@@ -138,37 +81,6 @@ signup.addEventListener("click", (event) => {
             }
         });
 });
-// const signin = document.getElementById("submitSignIn");
-// signin.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   const email = document.getElementById("emailSignIn").value;
-//   const password = document.getElementById("passwordSignIn").value;
-//   const auth = getAuth();
-//   signInWithEmailAndPassword(auth, email, password)
-//     .then((userCredential) => {
-//       showMessage("User signed in successfully", "signInMessage");
-//       const user = userCredential.user;
-
-//       localStorage.setItem("loggedInUserId", user.uid);
-//       window.location.href = "homepage.html";
-//     })
-//     .catch((error) => {
-//       const errorCode = error.code;
-//       switch (errorCode) {
-//         case "auth/user-not-found":
-//           showMessage("User not found", "signInMessage");
-//           break;
-//         case "auth/wrong-password":
-//           showMessage("Invalid password", "signInMessage");
-//           break;
-//         case "auth/invalid-email":
-//           showMessage("Invalid email format", "signInMessage");
-//           break;
-//         default:
-//           showMessage("Unable to sign in", "signInMessage");
-//       }
-//     });
-// });
 
 const signin = document.getElementById("submitSignIn");
 
