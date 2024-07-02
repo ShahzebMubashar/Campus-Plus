@@ -92,6 +92,11 @@ signup.addEventListener("click", (event) => {
         return;
     }
 
+    console.log("Gotten Email:", email);
+    console.log(" Gotten Password:", password);
+    console.log(" Gotten Username:", username);
+
+
     const auth = getAuth();
     const db = getFirestore();
 
@@ -106,7 +111,7 @@ signup.addEventListener("click", (event) => {
             const docRef = doc(db, "users", user.uid);
             setDoc(docRef, userData)
                 .then(() => {
-                    window.location.href = "index.html";
+                    window.location.href = "index1.html";
                 })
                 .catch((error) => {
                     console.error("Error adding document: ", error);
@@ -191,7 +196,7 @@ signin.addEventListener("click", (event) => {
             showMessage("User signed in successfully", "signInMessage");
             const user = userCredential.user;
             localStorage.setItem("loggedInUserId", user.uid);
-            window.location.href = "homepage.html";
+            window.location.href = "index1.html";
         })
         .catch((error) => {
             const errorCode = error.code;
