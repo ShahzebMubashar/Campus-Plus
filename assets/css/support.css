@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -149,11 +150,12 @@ nav a {
 
 
 .contact-support {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 40px;
     background-color: #e9f7fe;
     text-align: center;
+    margin-top: 5%;
 }
 
 .contact-support .contact-button {
