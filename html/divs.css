@@ -448,11 +448,13 @@ a {
     font-size: 25px;
     color: #333;
     margin-bottom: 5%;
+    width: 100%;
 }
 
 .pp-container .item p {
     font-size: 18px;
     color: #666;
+    width: 100%;
 }
 
 #viewMoreBtn {

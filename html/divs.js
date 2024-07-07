@@ -1,5 +1,5 @@
 const items = [
-    { heading: "Heading 1", para: "This is a paragraph for item 1." },
+    { heading: "Operating System", para: "This is a paragraph for item 1." },
     { heading: "Heading 2", para: "This is a paragraph for item 2." },
     { heading: "Heading 3", para: "This is a paragraph for item 3." },
     { heading: "Heading 4", para: "This is a paragraph for item 4." },
