@@ -1,6 +1,6 @@
 const items = [
-    { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html" },
-    { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html" },
+    { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html" },
+    { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html", rating: 4.2 },
     { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html" },
     { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html" },
     { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html" },
@@ -57,6 +57,21 @@ function createDivs(count) {
         button.className = 'item-button';
         div.appendChild(button);
 
+        // Add rating stars and text inside the div item
+        const ratingDiv = document.createElement('div');
+        ratingDiv.className = 'rating';
+        const ratingValue = items[currentIndex].rating;
+
+        const stars = document.createElement('span');
+        stars.innerHTML = `${'★'.repeat(Math.floor(ratingValue))}${'☆'.repeat(5 - Math.floor(ratingValue))}`;
+        ratingDiv.appendChild(stars);
+
+        const ratingText = document.createElement('span');
+        ratingText.textContent = ` ${ratingValue}/5`;
+        ratingDiv.appendChild(ratingText);
+
+        div.appendChild(ratingDiv);
+
         container.appendChild(div);
         currentIndex++;
     }
@@ -103,6 +118,21 @@ function filterItems(searchText) {
             button.textContent = "Click Me";
             button.className = 'item-button';
             div.appendChild(button);
+
+            // Add rating stars and text inside the filtered div item
+            const ratingDiv = document.createElement('div');
+            ratingDiv.className = 'rating';
+            const ratingValue = item.rating;
+
+            const stars = document.createElement('span');
+            stars.innerHTML = `${'★'.repeat(Math.floor(ratingValue))}${'☆'.repeat(5 - Math.floor(ratingValue))}`;
+            ratingDiv.appendChild(stars);
+
+            const ratingText = document.createElement('span');
+            ratingText.textContent = ` ${ratingValue}/5`;
+            ratingDiv.appendChild(ratingText);
+
+            div.appendChild(ratingDiv);
 
             container.appendChild(div);
         }
