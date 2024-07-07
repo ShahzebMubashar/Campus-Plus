@@ -61,3 +61,48 @@ function loadMoreDivs() {
 
 // Load initial 12 divs
 createDivs(12);
+
+// Function to filter items based on search input
+function filterItems(searchText) {
+    const container = document.getElementById('container');
+    container.innerHTML = ''; // Clear existing items
+
+    items.forEach(item => {
+        // Convert heading and para to lowercase for case-insensitive search
+        const headingText = item.heading.toLowerCase();
+        const paraText = item.para.toLowerCase();
+        const searchLower = searchText.toLowerCase();
+
+        // Check if search text matches heading or paragraph
+        if (headingText.includes(searchLower) || paraText.includes(searchLower)) {
+            const div = document.createElement('div');
+            div.className = 'item';
+
+            const link = document.createElement('a');
+            link.href = item.link;
+
+            const heading = document.createElement('h2');
+            heading.textContent = item.heading;
+            link.appendChild(heading);
+
+            const para = document.createElement('p');
+            para.textContent = item.para;
+            link.appendChild(para);
+
+            div.appendChild(link);
+            container.appendChild(div);
+        }
+    });
+}
+
+// Function to handle search button click
+document.querySelector('.search-bar button').addEventListener('click', function () {
+    const searchText = document.querySelector('.search-bar input').value;
+    filterItems(searchText);
+});
+
+// Function to handle search input change
+document.querySelector('.search-bar input').addEventListener('input', function () {
+    const searchText = document.querySelector('.search-bar input').value;
+    filterItems(searchText);
+});
