@@ -1,41 +1,28 @@
 const items = [
-    { heading: "Operating System", para: "This is a paragraph for item 1." },
-    { heading: "Heading 2", para: "This is a paragraph for item 2." },
-    { heading: "Heading 3", para: "This is a paragraph for item 3." },
-    { heading: "Heading 4", para: "This is a paragraph for item 4." },
-    { heading: "Heading 5", para: "This is a paragraph for item 5." },
-    { heading: "Heading 6", para: "This is a paragraph for item 6." },
-    { heading: "Heading 7", para: "This is a paragraph for item 7." },
-    { heading: "Heading 8", para: "This is a paragraph for item 8." },
-    { heading: "Heading 9", para: "This is a paragraph for item 9." },
-    { heading: "Heading 10", para: "This is a paragraph for item 10." },
-    { heading: "Heading 11", para: "This is a paragraph for item 11." },
-    { heading: "Heading 12", para: "This is a paragraph for item 12." },
-    { heading: "Heading 13", para: "This is a paragraph for item 13." },
-    { heading: "Heading 14", para: "This is a paragraph for item 14." },
-    { heading: "Heading 15", para: "This is a paragraph for item 15." },
-    { heading: "Heading 16", para: "This is a paragraph for item 16." },
-    { heading: "Heading 17", para: "This is a paragraph for item 17." },
-    { heading: "Heading 18", para: "This is a paragraph for item 18." },
-    { heading: "Heading 19", para: "This is a paragraph for item 19." },
-    { heading: "Heading 20", para: "This is a paragraph for item 20." },
-    { heading: "Heading 21", para: "This is a paragraph for item 21." },
-    { heading: "Heading 22", para: "This is a paragraph for item 22." },
-    { heading: "Heading 23", para: "This is a paragraph for item 23." },
-    { heading: "Heading 24", para: "This is a paragraph for item 24." },
-    { heading: "Heading 12", para: "This is a paragraph for item 12." },
-    { heading: "Heading 13", para: "This is a paragraph for item 13." },
-    { heading: "Heading 14", para: "This is a paragraph for item 14." },
-    { heading: "Heading 15", para: "This is a paragraph for item 15." },
-    { heading: "Heading 16", para: "This is a paragraph for item 16." },
-    { heading: "Heading 17", para: "This is a paragraph for item 17." },
-    { heading: "Heading 18", para: "This is a paragraph for item 18." },
-    { heading: "Heading 19", para: "This is a paragraph for item 19." },
-    { heading: "Heading 20", para: "This is a paragraph for item 20." },
-    { heading: "Heading 21", para: "This is a paragraph for item 21." },
-    { heading: "Heading 22", para: "This is a paragraph for item 22." },
-    { heading: "Heading 23", para: "This is a paragraph for item 23." },
-    { heading: "Heading 24", para: "This is a paragraph for item 24." }
+    { heading: "Operating System", para: "This is a paragraph for item 1.", link: "page1.html" },
+    { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html" },
+    { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html" },
+    { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html" },
+    { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html" },
+    { heading: "Heading 6", para: "This is a paragraph for item 6.", link: "page6.html" },
+    { heading: "Heading 7", para: "This is a paragraph for item 7.", link: "page7.html" },
+    { heading: "Heading 8", para: "This is a paragraph for item 8.", link: "page8.html" },
+    { heading: "Heading 9", para: "This is a paragraph for item 9.", link: "page9.html" },
+    { heading: "Heading 10", para: "This is a paragraph for item 10.", link: "page10.html" },
+    { heading: "Heading 11", para: "This is a paragraph for item 11.", link: "page11.html" },
+    { heading: "Heading 12", para: "This is a paragraph for item 12.", link: "page12.html" },
+    { heading: "Heading 13", para: "This is a paragraph for item 13.", link: "page13.html" },
+    { heading: "Heading 14", para: "This is a paragraph for item 14.", link: "page14.html" },
+    { heading: "Heading 15", para: "This is a paragraph for item 15.", link: "page15.html" },
+    { heading: "Heading 16", para: "This is a paragraph for item 16.", link: "page16.html" },
+    { heading: "Heading 17", para: "This is a paragraph for item 17.", link: "page17.html" },
+    { heading: "Heading 18", para: "This is a paragraph for item 18.", link: "page18.html" },
+    { heading: "Heading 19", para: "This is a paragraph for item 19.", link: "page19.html" },
+    { heading: "Heading 20", para: "This is a paragraph for item 20.", link: "page20.html" },
+    { heading: "Heading 21", para: "This is a paragraph for item 21.", link: "page21.html" },
+    { heading: "Heading 22", para: "This is a paragraph for item 22.", link: "page22.html" },
+    { heading: "Heading 23", para: "This is a paragraph for item 23.", link: "page23.html" },
+    { heading: "Heading 24", para: "This is a paragraph for item 24.", link: "page24.html" }
 ];
 
 let currentIndex = 0;
@@ -51,14 +38,18 @@ function createDivs(count) {
         const div = document.createElement('div');
         div.className = 'item';
 
+        const link = document.createElement('a');
+        link.href = items[currentIndex].link;
+
         const heading = document.createElement('h2');
         heading.textContent = items[currentIndex].heading;
-        div.appendChild(heading);
+        link.appendChild(heading);
 
         const para = document.createElement('p');
         para.textContent = items[currentIndex].para;
-        div.appendChild(para);
+        link.appendChild(para);
 
+        div.appendChild(link);
         container.appendChild(div);
         currentIndex++;
     }
