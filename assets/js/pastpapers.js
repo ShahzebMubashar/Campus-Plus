@@ -1,28 +1,28 @@
 const items = [
-    { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html", rating: 5.0 },
+    { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html", rating: 5.0, badge: 'easy' },
     { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html", rating: 4.2, badge: 'medium' },
-    { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html", rating: 3.9 },
-    { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html", rating: 4.5 },
-    { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html", rating: 4.5 },
-    { heading: "Heading 6", para: "This is a paragraph for item 6.", link: "page6.html", rating: 4.5 },
-    { heading: "Heading 7", para: "This is a paragraph for item 7.", link: "page7.html", rating: 4.5 },
-    { heading: "Heading 8", para: "This is a paragraph for item 8.", link: "page8.html", rating: 4.5 },
-    { heading: "Heading 9", para: "This is a paragraph for item 9.", link: "page9.html", rating: 4.5 },
-    { heading: "Heading 10", para: "This is a paragraph for item 10.", link: "page10.html", rating: 4.5 },
-    { heading: "Heading 11", para: "This is a paragraph for item 11.", link: "page11.html", rating: 4.5 },
-    { heading: "Heading 12", para: "This is a paragraph for item 12.", link: "page12.html", rating: 4.5 },
-    { heading: "Heading 13", para: "This is a paragraph for item 13.", link: "page13.html", rating: 4.5 },
-    { heading: "Heading 14", para: "This is a paragraph for item 14.", link: "page14.html", rating: 4.5 },
-    { heading: "Heading 15", para: "This is a paragraph for item 15.", link: "page15.html", rating: 4.5 },
-    { heading: "Heading 16", para: "This is a paragraph for item 16.", link: "page16.html", rating: 4.5 },
-    { heading: "Heading 17", para: "This is a paragraph for item 17.", link: "page17.html", rating: 4.5 },
-    { heading: "Heading 18", para: "This is a paragraph for item 18.", link: "page18.html", rating: 4.5 },
-    { heading: "Heading 19", para: "This is a paragraph for item 19.", link: "page19.html", rating: 4.5 },
-    { heading: "Heading 20", para: "This is a paragraph for item 20.", link: "page20.html", rating: 4.5 },
-    { heading: "Heading 21", para: "This is a paragraph for item 21.", link: "page21.html", rating: 4.5 },
-    { heading: "Heading 22", para: "This is a paragraph for item 22.", link: "page22.html", rating: 4.5 },
-    { heading: "Heading 23", para: "This is a paragraph for item 23.", link: "page23.html", rating: 4.5 },
-    { heading: "Heading 24", para: "This is a paragraph for item 24.", link: "page24.html", rating: 4.5 }
+    { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html", rating: 3.9, badge: 'hard' },
+    { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 6", para: "This is a paragraph for item 6.", link: "page6.html", rating: 4.5, badge: 'hard' },
+    { heading: "Heading 7", para: "This is a paragraph for item 7.", link: "page7.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 8", para: "This is a paragraph for item 8.", link: "page8.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 9", para: "This is a paragraph for item 9.", link: "page9.html", rating: 4.5, badge: 'hard' },
+    { heading: "Heading 10", para: "This is a paragraph for item 10.", link: "page10.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 11", para: "This is a paragraph for item 11.", link: "page11.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 12", para: "This is a paragraph for item 12.", link: "page12.html", rating: 4.5, badge: 'hard' },
+    { heading: "Heading 13", para: "This is a paragraph for item 13.", link: "page13.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 14", para: "This is a paragraph for item 14.", link: "page14.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 15", para: "This is a paragraph for item 15.", link: "page15.html", rating: 4.5, badge: 'hard' },
+    { heading: "Heading 16", para: "This is a paragraph for item 16.", link: "page16.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 17", para: "This is a paragraph for item 17.", link: "page17.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 18", para: "This is a paragraph for item 18.", link: "page18.html", rating: 4.5, badge: 'hard' },
+    { heading: "Heading 19", para: "This is a paragraph for item 19.", link: "page19.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 20", para: "This is a paragraph for item 20.", link: "page20.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 21", para: "This is a paragraph for item 21.", link: "page21.html", rating: 4.5, badge: 'hard' },
+    { heading: "Heading 22", para: "This is a paragraph for item 22.", link: "page22.html", rating: 4.5, badge: 'easy' },
+    { heading: "Heading 23", para: "This is a paragraph for item 23.", link: "page23.html", rating: 4.5, badge: 'medium' },
+    { heading: "Heading 24", para: "This is a paragraph for item 24.", link: "page24.html", rating: 4.5, badge: 'hard' }
 ];
 
 let currentIndex = 0;
@@ -51,10 +51,10 @@ function createDivs(count) {
 
         div.appendChild(link);
 
-        // Add badge for "Easy"
+        // Add badge
         const badge = document.createElement('div');
-        badge.className = 'badge';
-        badge.textContent = 'Easy';
+        badge.className = `badge ${items[currentIndex].badge}`;
+        badge.textContent = items[currentIndex].badge.charAt(0).toUpperCase() + items[currentIndex].badge.slice(1);
         div.appendChild(badge);
 
         // Add button inside the div item
@@ -122,10 +122,10 @@ function filterItems(searchText) {
 
             div.appendChild(link);
 
-            // Add badge for "Easy"
+            // Add badge
             const badge = document.createElement('div');
-            badge.className = 'badge';
-            badge.textContent = 'Easy';
+            badge.className = `badge ${item.badge}`;
+            badge.textContent = item.badge.charAt(0).toUpperCase() + item.badge.slice(1);
             div.appendChild(badge);
 
             // Add button inside the div item
