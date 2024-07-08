@@ -466,10 +466,13 @@ a {
 
 
 
+
+
 .pp-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
+    gap: 20px;
+    /* Adjust the gap between items */
     width: 90%;
     margin: 0 auto;
 }
@@ -485,6 +488,7 @@ a {
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     margin-bottom: 15%;
+    position: relative;
 }
 
 .pp-container .item:hover {
@@ -524,15 +528,14 @@ a {
 
 .item-button {
     margin-top: 10px;
-    padding: 5px 10px;
+    padding: 7px 12px;
     font-size: 14px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #000;
     color: white;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-
 }
 
 .item-button:hover {
@@ -540,20 +543,20 @@ a {
 }
 
 .rating {
-    position: absolute;
-    bottom: 10px;
-    right: 90px;
     display: flex;
     align-items: center;
+    margin-top: -24%;
+    font-size: 25px;
+    margin-left: 55%;
 }
 
 .rating .stars {
     color: gold;
+    margin-right: 10px;
 }
 
 .rating .rating-value {
-    margin-left: 5px;
-    font-size: 14px;
+    font-size: 17px;
     color: #333;
 }
 
@@ -563,4 +566,18 @@ a {
     cursor: pointer;
     margin-top: 5%;
     margin-left: 45%;
+}
+
+.item-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    transform-origin: top right;
+    z-index: 1;
 }

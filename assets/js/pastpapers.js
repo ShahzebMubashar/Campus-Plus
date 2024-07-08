@@ -1,28 +1,28 @@
 const items = [
     { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html", rating: 5.0 },
     { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html", rating: 4.2 },
-    { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html" },
-    { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html" },
-    { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html" },
-    { heading: "Heading 6", para: "This is a paragraph for item 6.", link: "page6.html" },
-    { heading: "Heading 7", para: "This is a paragraph for item 7.", link: "page7.html" },
-    { heading: "Heading 8", para: "This is a paragraph for item 8.", link: "page8.html" },
-    { heading: "Heading 9", para: "This is a paragraph for item 9.", link: "page9.html" },
-    { heading: "Heading 10", para: "This is a paragraph for item 10.", link: "page10.html" },
-    { heading: "Heading 11", para: "This is a paragraph for item 11.", link: "page11.html" },
-    { heading: "Heading 12", para: "This is a paragraph for item 12.", link: "page12.html" },
-    { heading: "Heading 13", para: "This is a paragraph for item 13.", link: "page13.html" },
-    { heading: "Heading 14", para: "This is a paragraph for item 14.", link: "page14.html" },
-    { heading: "Heading 15", para: "This is a paragraph for item 15.", link: "page15.html" },
-    { heading: "Heading 16", para: "This is a paragraph for item 16.", link: "page16.html" },
-    { heading: "Heading 17", para: "This is a paragraph for item 17.", link: "page17.html" },
-    { heading: "Heading 18", para: "This is a paragraph for item 18.", link: "page18.html" },
-    { heading: "Heading 19", para: "This is a paragraph for item 19.", link: "page19.html" },
-    { heading: "Heading 20", para: "This is a paragraph for item 20.", link: "page20.html" },
-    { heading: "Heading 21", para: "This is a paragraph for item 21.", link: "page21.html" },
-    { heading: "Heading 22", para: "This is a paragraph for item 22.", link: "page22.html" },
-    { heading: "Heading 23", para: "This is a paragraph for item 23.", link: "page23.html" },
-    { heading: "Heading 24", para: "This is a paragraph for item 24.", link: "page24.html" }
+    { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html", rating: 3.9 },
+    { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html", rating: 4.5 },
+    { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html", rating: 4.5 },
+    { heading: "Heading 6", para: "This is a paragraph for item 6.", link: "page6.html", rating: 4.5 },
+    { heading: "Heading 7", para: "This is a paragraph for item 7.", link: "page7.html", rating: 4.5 },
+    { heading: "Heading 8", para: "This is a paragraph for item 8.", link: "page8.html", rating: 4.5 },
+    { heading: "Heading 9", para: "This is a paragraph for item 9.", link: "page9.html", rating: 4.5 },
+    { heading: "Heading 10", para: "This is a paragraph for item 10.", link: "page10.html", rating: 4.5 },
+    { heading: "Heading 11", para: "This is a paragraph for item 11.", link: "page11.html", rating: 4.5 },
+    { heading: "Heading 12", para: "This is a paragraph for item 12.", link: "page12.html", rating: 4.5 },
+    { heading: "Heading 13", para: "This is a paragraph for item 13.", link: "page13.html", rating: 4.5 },
+    { heading: "Heading 14", para: "This is a paragraph for item 14.", link: "page14.html", rating: 4.5 },
+    { heading: "Heading 15", para: "This is a paragraph for item 15.", link: "page15.html", rating: 4.5 },
+    { heading: "Heading 16", para: "This is a paragraph for item 16.", link: "page16.html", rating: 4.5 },
+    { heading: "Heading 17", para: "This is a paragraph for item 17.", link: "page17.html", rating: 4.5 },
+    { heading: "Heading 18", para: "This is a paragraph for item 18.", link: "page18.html", rating: 4.5 },
+    { heading: "Heading 19", para: "This is a paragraph for item 19.", link: "page19.html", rating: 4.5 },
+    { heading: "Heading 20", para: "This is a paragraph for item 20.", link: "page20.html", rating: 4.5 },
+    { heading: "Heading 21", para: "This is a paragraph for item 21.", link: "page21.html", rating: 4.5 },
+    { heading: "Heading 22", para: "This is a paragraph for item 22.", link: "page22.html", rating: 4.5 },
+    { heading: "Heading 23", para: "This is a paragraph for item 23.", link: "page23.html", rating: 4.5 },
+    { heading: "Heading 24", para: "This is a paragraph for item 24.", link: "page24.html", rating: 4.5 }
 ];
 
 let currentIndex = 0;
@@ -58,19 +58,22 @@ function createDivs(count) {
         div.appendChild(button);
 
         // Add rating stars and text inside the div item
-        const ratingDiv = document.createElement('div');
-        ratingDiv.className = 'rating';
-        const ratingValue = items[currentIndex].rating;
+        if (items[currentIndex].rating !== undefined) {
+            const ratingDiv = document.createElement('div');
+            ratingDiv.className = 'rating';
 
-        const stars = document.createElement('span');
-        stars.innerHTML = `${'★'.repeat(Math.floor(ratingValue))}${'☆'.repeat(5 - Math.floor(ratingValue))}`;
-        ratingDiv.appendChild(stars);
+            const stars = document.createElement('span');
+            stars.className = 'stars';
+            stars.innerHTML = `${'★'.repeat(Math.floor(items[currentIndex].rating))}${'☆'.repeat(5 - Math.floor(items[currentIndex].rating))}`;
+            ratingDiv.appendChild(stars);
 
-        const ratingText = document.createElement('span');
-        ratingText.textContent = ` ${ratingValue}/5`;
-        ratingDiv.appendChild(ratingText);
+            const ratingText = document.createElement('span');
+            ratingText.className = 'rating-value';
+            ratingText.textContent = `${items[currentIndex].rating}/5`;
+            ratingDiv.appendChild(ratingText);
 
-        div.appendChild(ratingDiv);
+            div.appendChild(ratingDiv);
+        }
 
         container.appendChild(div);
         currentIndex++;
@@ -113,40 +116,37 @@ function filterItems(searchText) {
 
             div.appendChild(link);
 
-            // Add button inside the filtered div item
+            // Add button inside the div item
             const button = document.createElement('button');
-            button.textContent = "Click Me";
+            button.textContent = "See All";
             button.className = 'item-button';
             div.appendChild(button);
 
-            // Add rating stars and text inside the filtered div item
-            const ratingDiv = document.createElement('div');
-            ratingDiv.className = 'rating';
-            const ratingValue = item.rating;
+            // Add rating stars and text inside the div item
+            if (item.rating !== undefined) {
+                const ratingDiv = document.createElement('div');
+                ratingDiv.className = 'rating';
 
-            const stars = document.createElement('span');
-            stars.innerHTML = `${'★'.repeat(Math.floor(ratingValue))}${'☆'.repeat(5 - Math.floor(ratingValue))}`;
-            ratingDiv.appendChild(stars);
+                const stars = document.createElement('span');
+                stars.className = 'stars';
+                stars.innerHTML = `${'★'.repeat(Math.floor(item.rating))}${'☆'.repeat(5 - Math.floor(item.rating))}`;
+                ratingDiv.appendChild(stars);
 
-            const ratingText = document.createElement('span');
-            ratingText.textContent = ` ${ratingValue}/5`;
-            ratingDiv.appendChild(ratingText);
+                const ratingText = document.createElement('span');
+                ratingText.className = 'rating-value';
+                ratingText.textContent = `${item.rating}/5`;
+                ratingDiv.appendChild(ratingText);
 
-            div.appendChild(ratingDiv);
+                div.appendChild(ratingDiv);
+            }
 
             container.appendChild(div);
         }
     });
 }
 
-// Function to handle search button click
-document.querySelector('.search-bar button').addEventListener('click', function () {
-    const searchText = document.querySelector('.search-bar input').value;
-    filterItems(searchText);
-});
-
-// Function to handle search input change
+// Add event listener for search bar input
 document.querySelector('.search-bar input').addEventListener('input', function () {
-    const searchText = document.querySelector('.search-bar input').value;
+    const searchText = this.value;
     filterItems(searchText);
 });
