@@ -1,6 +1,6 @@
 const items = [
     { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html", rating: 5.0 },
-    { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html", rating: 4.2 },
+    { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html", rating: 4.2, badge: 'medium' },
     { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html", rating: 3.9 },
     { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html", rating: 4.5 },
     { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html", rating: 4.5 },
@@ -51,9 +51,15 @@ function createDivs(count) {
 
         div.appendChild(link);
 
+        // Add badge for "Easy"
+        const badge = document.createElement('div');
+        badge.className = 'badge';
+        badge.textContent = 'Easy';
+        div.appendChild(badge);
+
         // Add button inside the div item
         const button = document.createElement('button');
-        button.textContent = "Click Me";
+        button.textContent = "See All";
         button.className = 'item-button';
         div.appendChild(button);
 
@@ -115,6 +121,12 @@ function filterItems(searchText) {
             link.appendChild(para);
 
             div.appendChild(link);
+
+            // Add badge for "Easy"
+            const badge = document.createElement('div');
+            badge.className = 'badge';
+            badge.textContent = 'Easy';
+            div.appendChild(badge);
 
             // Add button inside the div item
             const button = document.createElement('button');
