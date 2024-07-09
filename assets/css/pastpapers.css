@@ -10,6 +10,7 @@ body {
     background-color: #fff;
     background-image: url(../images/newbg3.png);
     background-size: contain;
+    background-repeat: no-repeat;
     /* overflow-x: hidden; */
 }
 
@@ -425,6 +426,74 @@ a {
 
 
 
+
+/*=============== CONTENT ===============*/
+.content {
+    width: 100%;
+    background-color: transparent;
+    height: 550px;
+    margin-top: -3.9%;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 12%;
+    margin-top: 18%;
+    max-width: 95%;
+}
+
+.content .text {
+    flex: 1;
+    max-width: 42%;
+}
+
+.content .text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content .text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.learn-more-btn {
+    background-color: #000;
+    color: white;
+    padding: 0.3rem 1.3rem 0.8rem 1.3rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(108, 117, 125, 0.1);
+    position: absolute;
+    margin-top: 2rem;
+    margin-right: 1rem;
+}
+
+.learn-more-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.learn-more-btn:active {
+    background-color: #494f54;
+    transform: translateY(0);
+}
+
+.learn-more-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(108, 117, 125, 0.5);
+}
+
+
+
+
+
 .search-section {
     text-align: center;
     padding: 40px;
@@ -434,7 +503,7 @@ a {
 .search-bar {
     display: flex;
     justify-content: center;
-    margin-top: 7%;
+    margin-top: 2%;
     position: relative;
 }
 
