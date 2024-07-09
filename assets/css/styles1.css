@@ -481,15 +481,15 @@ a {
 
 .content .image {
     flex: 1;
-    max-width: 43%;
+    max-width: 35%;
     margin-right: 7%;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 .content .image img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 30%;
 }
 
 .learn-more-btn {
