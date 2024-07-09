@@ -1,7 +1,7 @@
 const items = [
     { heading: "Operating Systems (OS)", para: "This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1. This is a paragraph for item 1.", link: "page1.html", rating: 5.0, badge: 'easy' },
-    { heading: "Heading 2", para: "This is a paragraph for item 2.", link: "page2.html", rating: 4.2, badge: 'medium' },
-    { heading: "Heading 3", para: "This is a paragraph for item 3.", link: "page3.html", rating: 3.9, badge: 'hard' },
+    { heading: "Design & Analysis of Algorithms (DAA)", para: "This is a paragraph for item 2. This is a paragraph for item 2. This is a paragraph for item 2. This is a paragraph for item 2.", link: "page2.html", rating: 4.2, badge: 'medium' },
+    { heading: "Data Structures (DS)", para: "This is a paragraph for item 3. This is a paragraph for item 3. This is a paragraph for item 3. This is a paragraph for item 3.", link: "page3.html", rating: 3.9, badge: 'hard' },
     { heading: "Heading 4", para: "This is a paragraph for item 4.", link: "page4.html", rating: 4.5, badge: 'easy' },
     { heading: "Heading 5", para: "This is a paragraph for item 5.", link: "page5.html", rating: 4.5, badge: 'medium' },
     { heading: "Heading 6", para: "This is a paragraph for item 6.", link: "page6.html", rating: 4.5, badge: 'hard' },

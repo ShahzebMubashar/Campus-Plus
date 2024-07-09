@@ -498,12 +498,14 @@ a {
     text-align: center;
     padding: 40px;
     background-color: transparent;
+    margin-top: 5%;
+
 }
 
 .search-bar {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 3%;
     position: relative;
 }
 
@@ -539,10 +541,10 @@ a {
 .pp-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 30px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .pp-container .item {
@@ -551,12 +553,13 @@ a {
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50px;
-    width: 90%;
+    width: 96%;
     height: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     margin-bottom: 15%;
     position: relative;
+
 }
 
 .pp-container .item:hover {
