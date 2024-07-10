@@ -612,7 +612,8 @@ a {
 }
 
 .pp-info {
-    margin-top: 20%;
+    position: absolute;
+    bottom: 30px;
 }
 
 .pp-info-btn {
