@@ -543,9 +543,21 @@ a {
 }
 
 .pastpapers-section h1 {
-    font-size: 32px;
+    font-size: 40px;
+    margin: 3% auto 6% auto;
+    word-spacing: 5%;
+    font-weight: 600;
+}
+
+.pastpapers-section h1 span {
+    font-size: 40px;
     font-weight: bolder;
     margin: 3% auto 6% auto;
+    background-color: black;
+    color: white;
+    padding: 12px 12px;
+    border-radius: 10px;
+    font-weight: 600;
 }
 
 .pp-container {
