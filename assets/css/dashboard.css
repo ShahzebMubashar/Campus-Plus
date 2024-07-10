@@ -562,7 +562,7 @@ a {
     border: none;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
     height: 300px;
 }
@@ -597,10 +597,9 @@ a {
 }
 
 .pp-rating {
-    display: flex;
     position: absolute;
-    justify-content: flex-start;
-    bottom: 25px;
+    bottom: 30px;
+    right: 20px;
 }
 
 .pp-rating span {
