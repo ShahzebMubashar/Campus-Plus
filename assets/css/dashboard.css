@@ -624,6 +624,7 @@ a {
     transition: background-color 0.3s;
     color: #000;
     border: 2px solid black;
+    font-weight: 500;
 }
 
 .pp-info-btn:hover {
