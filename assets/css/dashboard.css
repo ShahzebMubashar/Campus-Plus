@@ -661,3 +661,211 @@ a {
 .pp-btn:hover {
     background-color: #555;
 }
+
+
+
+
+
+
+/*=============== YOUTUBE PLAYLISTS ===============*/
+.course {
+    background-color: #f0f8ff;
+    padding: 40px 0;
+}
+
+.course .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.course .section-subtitle {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.course .section-title {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 1% auto;
+    color: #000;
+}
+
+.course .grid-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course .grid-list li {
+    flex: 1;
+}
+
+.course-card {
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card .img-holder {
+    width: 100%;
+    height: auto;
+}
+
+.course-card .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    /* Added smooth transition */
+}
+
+.course-card:hover .img-cover {
+    transform: scale(1.1);
+    /* Zoom effect on hover */
+}
+
+.course-card .abs-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: darkblue;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: 1;
+    padding: 6px 8px;
+    padding-block-end: 3px;
+}
+
+.course-card .abs-badge ion-icon {
+    font-size: 18px;
+    margin-block-end: 5px;
+    --ionicon-stroke-width: 50px;
+}
+
+.course-card .card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.course-card .badge {
+    background-color: hsla(210, 100%, 85%, 0.30);
+    color: hsl(210, 100%, 50%);
+    border-radius: 3px;
+    max-width: max-content;
+    line-height: 25px;
+    padding: 10px 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.85em;
+    margin-bottom: 10px;
+}
+
+.course-card .card-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-block: 15px 8px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+    color: #000;
+}
+
+.course-card .card-title:is(:hover, :focus) {
+    color: hsl(210, 100%, 50%);
+}
+
+.course-card .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.course-card .rating-wrapper {
+    display: flex;
+    gap: 3px;
+}
+
+.course-card .rating-wrapper ion-icon {
+    color: hsl(42, 94%, 55%);
+}
+
+.course-card .rating-text {
+    color: hsl(0, 0%, 9%);
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.course-card .price {
+    color: hsl(351, 83%, 61%);
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-block: 8px 15px;
+}
+
+.course-card .card-meta-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 1%;
+    padding: 0;
+    list-style: none;
+    width: 66%;
+}
+
+.course-card .card-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: hsl(0, 0%, 9%);
+    font-size: 0.9em;
+}
+
+.course-card .card-meta-item:not(:last-child)::after {
+    content: "|";
+    display: inline-block;
+    color: hsl(0, 0%, 90%);
+    padding: 0;
+}
+
+.course-card .card-meta-item ion-icon {
+    color: hsl(0, 0%, 65%);
+    --ionicon-stroke-width: 50px;
+}
+
+.btn-has-before {
+    margin-top: 60px;
+    padding: 12px 24px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-has-before:hover {
+    background-color: darkblue;
+}
+
+.btn-has-before .span {
+    font-size: 0.8em;
+}
