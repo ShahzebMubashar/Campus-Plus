@@ -277,6 +277,31 @@ a {
     transform: rotate(180deg);
 }
 
+
+
+.nav__actions {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.nav__icon {
+    font-size: 1.8rem;
+    color: hsl(220, 48%, 28%);
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav__icon:hover {
+    color: hsl(220, 68%, 54%);
+    transform: translateY(-2px);
+}
+
+.nav__icon:active {
+    transform: translateY(0);
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 300px) {
