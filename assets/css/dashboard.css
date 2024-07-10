@@ -624,11 +624,11 @@ a {
     transition: background-color 0.3s;
     color: #000;
     border: 2px solid black;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 .pp-info-btn:hover {
-    background-color: #555;
+    font-weight: 600;
 }
 
 .pastpapers-button {
