@@ -598,9 +598,9 @@ a {
 
 .pp-rating {
     display: flex;
-    align-items: center;
+    position: absolute;
     justify-content: flex-start;
-
+    bottom: 25px;
 }
 
 .pp-rating span {
