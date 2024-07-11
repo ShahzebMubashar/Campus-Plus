@@ -888,6 +888,7 @@ a {
 .calculator {
     position: relative;
     width: 300px;
+    margin-left: 100px;
 }
 
 .calculator .calc-buttons {
