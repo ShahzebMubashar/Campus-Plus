@@ -896,7 +896,7 @@ a {
     display: grid;
 }
 
-.calculator .calc-buttons #value {
+.calculator .calc-buttons .value {
     position: relative;
     left: 8px;
     margin-bottom: 12px;
@@ -949,19 +949,19 @@ a {
     text-shadow: 0 0 5px #219cf3, 0 0 8px #219cf3;
 }
 
-.calculator .calc-buttons span#clear {
+.calculator .calc-buttons .clear {
     grid-column: span 2;
     background: #f44336;
     color: #fff;
 }
 
-.calculator .calc-buttons span#plus {
+.calculator .calc-buttons .plus {
     grid-row: span 2;
     background: #31a935;
     color: #fff;
 }
 
-.calculator .calc-buttons span#equal {
+.calculator .calc-buttons .equal {
     background: #2196f3;
     color: #fff;
 }
