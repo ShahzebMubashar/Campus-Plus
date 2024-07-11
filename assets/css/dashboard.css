@@ -878,7 +878,7 @@ a {
 
 .cal-big-section {
     font-family: consolas;
-    background-color: #333;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -887,9 +887,23 @@ a {
 
 .calculator {
     position: relative;
-    width: 350px;
+    width: 380px;
     margin-right: 100px;
     margin-left: 120px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 12px 20px;
+    background-color: #333;
+}
+
+.calculator h1 {
+    background: transparent;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+
 }
 
 .calculator .calc-buttons {
@@ -965,4 +979,7 @@ a {
 .calculator .calc-buttons .equal {
     background: #2196f3;
     color: #fff;
+    width: 157px;
+    margin-right: -120px;
+    font-weight: 600;
 }
