@@ -1046,3 +1046,23 @@ a {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.tt-button-container {
+    margin-top: 20px;
+}
+
+.tt-redirect-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tt-redirect-button:hover {
+    background-color: #357ABD;
+}
