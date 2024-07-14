@@ -982,4 +982,67 @@ a {
     width: 157px;
     margin-right: -120px;
     font-weight: 600;
+    box-shadow: 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.calculator .calc-buttons .equal:hover {
+    background: darkblue;
+}
+
+
+
+
+
+
+.timetable-generator-section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #4A90E2;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.timetable-generator-section h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timetable-generator-section h2 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-item {
+    width: 45%;
+    margin: 10px;
+    text-align: left;
+}
+
+.course-item label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.course-item select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
