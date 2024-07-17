@@ -7,7 +7,10 @@ ion-icon {
     display: block;
 }
 
-/*=============== BASE ===============*/
+:root {
+    --header-height: 3.5rem;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -41,6 +44,8 @@ a {
     text-decoration: none;
 }
 
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     max-width: 1120px;
@@ -53,82 +58,16 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.4);
-    background-color: hsl(220, 100%, 99%);
+    box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
     z-index: 100;
 }
 
 /*=============== NAV ===============*/
-.nav {
-    height: 3.5rem;
-    align-items: center;
-}
-
-.signup-button {
-    background-color: #007bff;
-    color: white;
-    padding: 0.75rem 1.3rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
-    margin: 0.3rem;
-    margin-left: -0.1rem;
-}
-
-.signup-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-.signup-button:active {
-    background-color: #004494;
-    transform: translateY(0);
-}
-
-.signup-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5);
-}
-
-.login-button {
-    background-color: #000;
-    color: white;
-    padding: 0.8rem 1.3rem;
-    font-size: 0.875rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 0.375rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(108, 117, 125, 0.1);
-    margin: 0.5rem;
-}
-
-.login-button:hover {
-    background-color: #5a6268;
-    transform: translateY(-2px);
-}
-
-.login-button:active {
-    background-color: #494f54;
-    transform: translateY(0);
-}
-
-.login-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(108, 117, 125, 0.5);
-}
-
 .nav__data {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: -2%;
 }
 
 .nav__logo {
@@ -141,38 +80,16 @@ a {
 }
 
 .nav__logo i {
-    font-size: 1.25rem;
+    font-size: 20px;
 }
 
 .nav__logo:hover {
     color: hsl(220, 68%, 54%);
 }
 
-.nav__toggle {
-    position: relative;
-    width: 32px;
-    height: 32px;
-}
-
-.nav__toggle-menu,
-.nav__toggle-close {
-    font-size: 1.25rem;
-    color: hsl(220, 48%, 28%);
-    position: absolute;
-    display: grid;
-    place-items: center;
-    inset: 0;
-    cursor: pointer;
-    transition: opacity 0.1s, transform 0.4s;
-}
-
-.nav__toggle-close {
-    opacity: 0;
-}
-
 @media screen and (max-width: 1118px) {
     .nav__menu {
-        background-color: hsl(220, 100%, 99%);
+        background-color: #fff;
         position: absolute;
         left: 0;
         top: 2.5rem;
@@ -194,6 +111,12 @@ a {
     }
 }
 
+
+#li-login,
+#li-signup {
+    display: none;
+}
+
 .nav__link {
     color: hsl(220, 48%, 28%);
     font-weight: 600;
@@ -205,7 +128,7 @@ a {
 }
 
 .nav__link:hover {
-    background-color: hsl(220, 68%, 54%);
+    background-color: hsl(220, 68%, 97%);
 }
 
 /* Show menu */
@@ -283,7 +206,7 @@ a {
 }
 
 .dropdown__link {
-    font-size: 0.75rem;
+    font-size: 0.813rem;
     font-weight: 500;
     color: hsl(220, 12%, 45%);
     transition: color 0.3s;
@@ -293,10 +216,50 @@ a {
     color: hsl(220, 48%, 28%);
 }
 
-/* Rotate dropdown icon */
 .show-dropdown .dropdown__arrow {
     transform: rotate(180deg);
 }
+
+
+
+.nav__actions {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.nav__actions a {
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: white;
+    margin-top: 50px;
+}
+
+.nav__actions a:hover {
+    cursor: pointer;
+}
+
+.navbar-login {
+    background-color: #000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-signup {
+    background-color: #007bff;
+}
+
+.navbar-login:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.navbar-signup:hover {
+    background-color: #0056b3;
+}
+
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -322,10 +285,8 @@ a {
 
     .nav__list {
         display: flex;
-        column-gap: 2.5rem;
+        column-gap: 3rem;
         height: 100%;
-        font-size: 15px;
-        margin-left: -10%;
     }
 
     .nav li {
@@ -352,7 +313,7 @@ a {
         left: 0;
         right: 0;
         top: 6.5rem;
-        background-color: hsl(220, 100%, 99%);
+        background-color: #fff;
         box-shadow: 0 6px 8px hsla(220, 68%, 12%, 0.05);
         pointer-events: none;
         opacity: 0;
@@ -429,23 +390,67 @@ a {
     }
 }
 
+
+:is(.nav__logo, .nav__search, .nav__login, .nav__toggle, .nav__link):hover {
+    color: hsl(220, 68%, 54%);
+}
+
 /* Navigation for mobile devices */
 @media screen and (max-width: 1023px) {
-    .nav__menu {
+    .nav {
+        height: calc(3.5rem);
+    }
+
+    #nav_menu {
         position: fixed;
         top: -100%;
         left: 0;
-        background-color: hsl(220, 100%, 99%);
+        background-color: yellow;
         box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
         width: 100%;
         padding-block: 4.5rem 4rem;
         transition: top 0.4s;
+    }
 
+    .nav__actions {
+        display: none;
     }
 }
 
+@media screen and (max-width: 1023px) {
+    .nav__actions {
+        display: none;
+        position: absolute;
+        top: calc(3.5rem + 1rem);
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+        padding: 1rem 0;
+        flex-direction: column;
+        gap: 0.5rem;
+        z-index: 1000;
+    }
 
+    .nav__actions.active {
+        display: flex;
+    }
 
+    .nav__actions a {
+        padding: 8px 12px;
+        /* Adjust button padding */
+        font-size: 0.875rem;
+        /* Adjust font size */
+        width: 100%;
+        text-align: center;
+    }
+
+    #li-login,
+    #li-signup {
+        display: inline;
+    }
+
+}
 
 
 
