@@ -455,11 +455,14 @@ a {
 
 
 
+
+
+
 /*=============== CONTENT ===============*/
 .content {
     width: 100%;
     background-color: #f0f8ff;
-    height: 550px;
+    height: 620px;
     margin-top: -3.9%;
 }
 
@@ -530,6 +533,13 @@ a {
     outline: none;
     box-shadow: 0 0 0 4px rgba(108, 117, 125, 0.5);
 }
+
+
+
+
+
+
+
 
 
 
