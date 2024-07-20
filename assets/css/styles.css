@@ -1134,6 +1134,7 @@ a {
 
 
 
+
 /*=============== NEWS & EVENTS ===============*/
 .newsandevents {
     font-family: Arial, sans-serif;
@@ -1276,6 +1277,8 @@ a {
 
 
 
+
+
 /*=============== TESTIMONIALS/QUOTES ===============*/
 .quotes {
     font-family: 'Helvetica Neue', sans-serif;
@@ -1398,6 +1401,7 @@ a {
     padding: 0;
     cursor: pointer;
 }
+
 
 
 
@@ -1526,6 +1530,8 @@ a {
 
 
 
+
+
 /*=============== FAQs ===============*/
 .faq {
     width: 80%;
@@ -1570,6 +1576,7 @@ a {
 .arrow {
     font-size: 18px;
 }
+
 
 
 
